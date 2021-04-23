@@ -31,8 +31,8 @@ public class generateToken {
 				     .contentType("application/x-www-form-urlencoded")
 				      .formParam("client_id", "google-auth")
 				      .formParam("grant_type", "password")
-				      .formParam("client_secret", "fa5f4efc-e17b-4714-afbb-da94c83649f0")
-				      .formParam("username", "loadtestadmin@yopmail.com").request();
+				      .formParam("client_secret", "CLIENT_SECRET")
+				      .formParam("username", "USER_EMAIL").request();
 			 
 			    resspec = res.post("/auth/realms/sunbird/protocol/openid-connect/token");
 			    String result = resspec.then().extract().response().asString();
