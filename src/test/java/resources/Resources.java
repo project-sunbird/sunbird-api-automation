@@ -2,47 +2,6 @@ package resources;
 
 public class Resources {
 	
-	public static String ContentCreateAPI()
-	{
-		String ContentCreateAPI="/api/content/v1/create";
-		return ContentCreateAPI;
-	}
-	
-	public static String ContentUpdateAPI(String ContentId)
-	{
-		String ContentUpdateAPI="/api/content/v1/update/"+ContentId+"";
-		return ContentUpdateAPI;
-	}
-	
-	public static String contentPublish(String contentId)
-	{
-		String contentPublish="/api/content/v1/publish/"+contentId+"";
-		return contentPublish;
-	}
-	
-	public static String contentSearch()
-	{
-		String contentSearch="/api/content/v1/search";
-		return contentSearch;
-	}
-	
-	public static String contentRead(String contentid)
-	{
-		String contentRead="/api/content/v1/read/"+contentid+"";
-		return contentRead;
-	}
-		
-	public static String contentHierarchy(String contentId)
-	{
-		String contentHierarchy="/action/content/v3/hierarchy/"+contentId+"";
-		return contentHierarchy;
-	}
-	public static String CompositeSearch()
-	{
-		String CompositeSearch="/api/composite/v1/search";
-		return CompositeSearch;
-	}
-	
 	public static String userCreateAPI()
 	{
 		String userCreateAPI="/api/user/v2/create";
