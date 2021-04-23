@@ -14,7 +14,6 @@ import resources.Resources;
 import resources.Utils;
 import resources.payload;
 import resources.reUseableMethods;
-import resources.userToken;
 import resources.generateToken;
 
 import static io.restassured.RestAssured.given;
