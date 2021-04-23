@@ -1,0 +1,619 @@
+Request method:	POST
+Request URI:	https://staging.sunbirded.org/api/private/content/v3/create
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Channel-Id=in.ekstep
+				user-id=system
+				Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJiZW1mME1NR1RrNnVocVBwNW51bjA2T0pxSHJReTBwOCJ9.FSHIAdPdyJ-0ijYr7HPZUJ0ST974ccXZXZIhVXoZluI
+				x-authenticated-user-token=eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJHUnh4OHVyNDNwWEgzX1FNekJXZXJRUFdyWDAyUEprSzlDemwzaGM2MGZBIn0.eyJqdGkiOiJmYmViODJjNi0zMDg5LTQzYzgtOGFlMC0wOTA4OGU0Yjk4NGIiLCJleHAiOjE2MTY3OTEwOTcsIm5iZiI6MCwiaWF0IjoxNjE2NzQ3ODk3LCJpc3MiOiJodHRwczovL3N0YWdpbmcuc3VuYmlyZGVkLm9yZy9hdXRoL3JlYWxtcy9zdW5iaXJkIiwiYXVkIjpbInJlYWxtLW1hbmFnZW1lbnQiLCJhY2NvdW50Il0sInN1YiI6IjliYjg4NGZjLThhNTYtNDcyNy05NTIyLTI1YTdkNWI4ZWEwNiIsInR5cCI6IkJlYXJlciIsImF6cCI6ImxtcyIsImF1dGhfdGltZSI6MCwic2Vzc2lvbl9zdGF0ZSI6IjY5Y2ExNjcwLWZlY2QtNDdiMi04N2UwLTdkMzU0NGE5N2Y0YSIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cHM6Ly9zdGFnaW5nLnN1bmJpcmRlZC5vcmciXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiYWRtaW4iLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7InJlYWxtLW1hbmFnZW1lbnQiOnsicm9sZXMiOlsibWFuYWdlLXVzZXJzIl19LCJsbXMiOnsicm9sZXMiOlsidW1hX3Byb3RlY3Rpb24iXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoiIiwiY2xpZW50SWQiOiJsbXMiLCJjbGllbnRIb3N0IjoiMTE3LjIxNy41Ny43NCIsInByZWZlcnJlZF91c2VybmFtZSI6InNlcnZpY2UtYWNjb3VudC1sbXMiLCJjbGllbnRBZGRyZXNzIjoiMTE3LjIxNy41Ny43NCIsImVtYWlsIjoic2VydmljZS1hY2NvdW50LWxtc0BwbGFjZWhvbGRlci5vcmcifQ.Kg3OjeLXs-5xsU9H9yVW4KUul0soSAd2uMc5DID9_mQYMP2zwuwkH53TKqycP60uB5M_sgR1C3sxPSJD3v5rxHYJNBR5ivDkrGZOdZDBtBVrB2gt--7B7V7IL5W-St37-dTTsj93LqDwO09cS30jAephUkO7Hdhu3manHbtFFAJjBAeXHRTxszYOA9bTekicimy1V6i-IgNt6hSxpew20r2K4dq5gomOubk0rM-tpcaNokBZVlx8y2Avmaws2x_VbTBjrmGm00I1F1NQ2u8U1o7T3QrcEcMYNL83Utm9VzILqsbjc1RJCJ64qgnyjz8Tg9LMxB_qao3rVIBm8xJqQw
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "request": {
+        "content": {
+            "code": "test",
+            "name": "test1",
+            "mimeType": "application/vnd.ekstep.html-archive",
+            "contentType": "Resource",
+            "description": "test"
+        }
+    }
+}
+HTTP/1.1 200 OK
+Date: Fri, 26 Mar 2021 08:38:19 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+X-RateLimit-Limit-hour: 1000000
+X-RateLimit-Remaining-hour: 999999
+Request-Time: 24
+Access-Control-Allow-Origin: *
+X-Kong-Upstream-Latency: 25
+X-Kong-Proxy-Latency: 69
+Via: kong/0.14.1
+Content-Encoding: gzip
+
+{
+    "id": "api.content.create",
+    "ver": "3.0",
+    "ts": "2021-03-26T08:38:19ZZ",
+    "params": {
+        "resmsgid": "7024c52e-223a-431b-9646-dd951ca52228",
+        "msgid": null,
+        "err": null,
+        "status": "successful",
+        "errmsg": null
+    },
+    "responseCode": "OK",
+    "result": {
+        "identifier": "do_2132443987963248641753",
+        "node_id": "do_2132443987963248641753",
+        "versionKey": "1616747899943"
+    }
+}
+Request method:	GET
+Request URI:	https://staging.sunbirded.org/api/private/content/v3/read/do_2132443987963248641753
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	do_id=do_2132443987963248641753
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJiZW1mME1NR1RrNnVocVBwNW51bjA2T0pxSHJReTBwOCJ9.FSHIAdPdyJ-0ijYr7HPZUJ0ST974ccXZXZIhVXoZluI
+				x-authenticated-user-token=eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJHUnh4OHVyNDNwWEgzX1FNekJXZXJRUFdyWDAyUEprSzlDemwzaGM2MGZBIn0.eyJqdGkiOiJmYmViODJjNi0zMDg5LTQzYzgtOGFlMC0wOTA4OGU0Yjk4NGIiLCJleHAiOjE2MTY3OTEwOTcsIm5iZiI6MCwiaWF0IjoxNjE2NzQ3ODk3LCJpc3MiOiJodHRwczovL3N0YWdpbmcuc3VuYmlyZGVkLm9yZy9hdXRoL3JlYWxtcy9zdW5iaXJkIiwiYXVkIjpbInJlYWxtLW1hbmFnZW1lbnQiLCJhY2NvdW50Il0sInN1YiI6IjliYjg4NGZjLThhNTYtNDcyNy05NTIyLTI1YTdkNWI4ZWEwNiIsInR5cCI6IkJlYXJlciIsImF6cCI6ImxtcyIsImF1dGhfdGltZSI6MCwic2Vzc2lvbl9zdGF0ZSI6IjY5Y2ExNjcwLWZlY2QtNDdiMi04N2UwLTdkMzU0NGE5N2Y0YSIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cHM6Ly9zdGFnaW5nLnN1bmJpcmRlZC5vcmciXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiYWRtaW4iLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7InJlYWxtLW1hbmFnZW1lbnQiOnsicm9sZXMiOlsibWFuYWdlLXVzZXJzIl19LCJsbXMiOnsicm9sZXMiOlsidW1hX3Byb3RlY3Rpb24iXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoiIiwiY2xpZW50SWQiOiJsbXMiLCJjbGllbnRIb3N0IjoiMTE3LjIxNy41Ny43NCIsInByZWZlcnJlZF91c2VybmFtZSI6InNlcnZpY2UtYWNjb3VudC1sbXMiLCJjbGllbnRBZGRyZXNzIjoiMTE3LjIxNy41Ny43NCIsImVtYWlsIjoic2VydmljZS1hY2NvdW50LWxtc0BwbGFjZWhvbGRlci5vcmcifQ.Kg3OjeLXs-5xsU9H9yVW4KUul0soSAd2uMc5DID9_mQYMP2zwuwkH53TKqycP60uB5M_sgR1C3sxPSJD3v5rxHYJNBR5ivDkrGZOdZDBtBVrB2gt--7B7V7IL5W-St37-dTTsj93LqDwO09cS30jAephUkO7Hdhu3manHbtFFAJjBAeXHRTxszYOA9bTekicimy1V6i-IgNt6hSxpew20r2K4dq5gomOubk0rM-tpcaNokBZVlx8y2Avmaws2x_VbTBjrmGm00I1F1NQ2u8U1o7T3QrcEcMYNL83Utm9VzILqsbjc1RJCJ64qgnyjz8Tg9LMxB_qao3rVIBm8xJqQw
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 26 Mar 2021 08:38:20 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+X-RateLimit-Limit-hour: 1000000
+X-RateLimit-Remaining-hour: 999999
+Request-Time: 9
+Access-Control-Allow-Origin: *
+X-Kong-Upstream-Latency: 10
+X-Kong-Proxy-Latency: 1
+Via: kong/0.14.1
+Content-Encoding: gzip
+
+{
+    "id": "api.content.read",
+    "ver": "3.0",
+    "ts": "2021-03-26T08:38:20ZZ",
+    "params": {
+        "resmsgid": "bdf57943-daca-4b35-afde-7f556a2c9184",
+        "msgid": null,
+        "err": null,
+        "status": "successful",
+        "errmsg": null
+    },
+    "responseCode": "OK",
+    "result": {
+        "content": {
+            "ownershipType": [
+                "createdBy"
+            ],
+            "code": "test",
+            "credentials": {
+                "enabled": "No"
+            },
+            "channel": "in.ekstep",
+            "description": "test",
+            "language": [
+                "English"
+            ],
+            "mimeType": "application/vnd.ekstep.html-archive",
+            "idealScreenSize": "normal",
+            "createdOn": "2021-03-26T08:38:19.943+0000",
+            "objectType": "Content",
+            "primaryCategory": "Learning Resource",
+            "contentDisposition": "inline",
+            "lastUpdatedOn": "2021-03-26T08:38:19.943+0000",
+            "contentEncoding": "gzip",
+            "contentType": "Resource",
+            "dialcodeRequired": "No",
+            "trackable": {
+                "enabled": "No",
+                "autoBatch": "No"
+            },
+            "identifier": "do_2132443987963248641753",
+            "lastStatusChangedOn": "2021-03-26T08:38:19.943+0000",
+            "audience": [
+                "Student"
+            ],
+            "os": [
+                "All"
+            ],
+            "visibility": "Default",
+            "consumerId": "90a5d33b-8006-4a0a-8c70-eeab2aa2e894",
+            "mediaType": "content",
+            "osId": "org.ekstep.quiz.app",
+            "languageCode": [
+                "en"
+            ],
+            "version": 2,
+            "versionKey": "1616747899943",
+            "license": "CC BY 4.0",
+            "idealScreenDensity": "hdpi",
+            "framework": "NCF",
+            "compatibilityLevel": 1,
+            "name": "test1",
+            "status": "Draft"
+        }
+    }
+}
+Request method:	POST
+Request URI:	https://staging.sunbirded.org/api/private/content/v3/create
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Channel-Id=in.ekstep
+				user-id=system
+				Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJiZW1mME1NR1RrNnVocVBwNW51bjA2T0pxSHJReTBwOCJ9.FSHIAdPdyJ-0ijYr7HPZUJ0ST974ccXZXZIhVXoZluI
+				x-authenticated-user-token=eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJHUnh4OHVyNDNwWEgzX1FNekJXZXJRUFdyWDAyUEprSzlDemwzaGM2MGZBIn0.eyJqdGkiOiJmYmViODJjNi0zMDg5LTQzYzgtOGFlMC0wOTA4OGU0Yjk4NGIiLCJleHAiOjE2MTY3OTEwOTcsIm5iZiI6MCwiaWF0IjoxNjE2NzQ3ODk3LCJpc3MiOiJodHRwczovL3N0YWdpbmcuc3VuYmlyZGVkLm9yZy9hdXRoL3JlYWxtcy9zdW5iaXJkIiwiYXVkIjpbInJlYWxtLW1hbmFnZW1lbnQiLCJhY2NvdW50Il0sInN1YiI6IjliYjg4NGZjLThhNTYtNDcyNy05NTIyLTI1YTdkNWI4ZWEwNiIsInR5cCI6IkJlYXJlciIsImF6cCI6ImxtcyIsImF1dGhfdGltZSI6MCwic2Vzc2lvbl9zdGF0ZSI6IjY5Y2ExNjcwLWZlY2QtNDdiMi04N2UwLTdkMzU0NGE5N2Y0YSIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cHM6Ly9zdGFnaW5nLnN1bmJpcmRlZC5vcmciXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiYWRtaW4iLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7InJlYWxtLW1hbmFnZW1lbnQiOnsicm9sZXMiOlsibWFuYWdlLXVzZXJzIl19LCJsbXMiOnsicm9sZXMiOlsidW1hX3Byb3RlY3Rpb24iXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoiIiwiY2xpZW50SWQiOiJsbXMiLCJjbGllbnRIb3N0IjoiMTE3LjIxNy41Ny43NCIsInByZWZlcnJlZF91c2VybmFtZSI6InNlcnZpY2UtYWNjb3VudC1sbXMiLCJjbGllbnRBZGRyZXNzIjoiMTE3LjIxNy41Ny43NCIsImVtYWlsIjoic2VydmljZS1hY2NvdW50LWxtc0BwbGFjZWhvbGRlci5vcmcifQ.Kg3OjeLXs-5xsU9H9yVW4KUul0soSAd2uMc5DID9_mQYMP2zwuwkH53TKqycP60uB5M_sgR1C3sxPSJD3v5rxHYJNBR5ivDkrGZOdZDBtBVrB2gt--7B7V7IL5W-St37-dTTsj93LqDwO09cS30jAephUkO7Hdhu3manHbtFFAJjBAeXHRTxszYOA9bTekicimy1V6i-IgNt6hSxpew20r2K4dq5gomOubk0rM-tpcaNokBZVlx8y2Avmaws2x_VbTBjrmGm00I1F1NQ2u8U1o7T3QrcEcMYNL83Utm9VzILqsbjc1RJCJ64qgnyjz8Tg9LMxB_qao3rVIBm8xJqQw
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "request": {
+        "content": {
+            "code": "test",
+            "name": "test2",
+            "mimeType": "application/vnd.ekstep.html-archive",
+            "contentType": "Collection",
+            "description": "test"
+        }
+    }
+}
+HTTP/1.1 200 OK
+Date: Fri, 26 Mar 2021 08:38:22 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+X-RateLimit-Limit-hour: 1000000
+X-RateLimit-Remaining-hour: 999998
+Request-Time: 1612
+Access-Control-Allow-Origin: *
+X-Kong-Upstream-Latency: 1614
+X-Kong-Proxy-Latency: 11
+Via: kong/0.14.1
+Content-Encoding: gzip
+
+{
+    "id": "api.content.create",
+    "ver": "3.0",
+    "ts": "2021-03-26T08:38:22ZZ",
+    "params": {
+        "resmsgid": "fd3940cf-7074-4d1f-80a6-b0731cb171f0",
+        "msgid": null,
+        "err": null,
+        "status": "successful",
+        "errmsg": null
+    },
+    "responseCode": "OK",
+    "result": {
+        "identifier": "do_2132443988167720961754",
+        "node_id": "do_2132443988167720961754",
+        "versionKey": "1616747902439"
+    }
+}
+Request method:	GET
+Request URI:	https://staging.sunbirded.org/api/private/content/v3/read/do_2132443988167720961754
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	do_id=do_2132443988167720961754
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJiZW1mME1NR1RrNnVocVBwNW51bjA2T0pxSHJReTBwOCJ9.FSHIAdPdyJ-0ijYr7HPZUJ0ST974ccXZXZIhVXoZluI
+				x-authenticated-user-token=eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJHUnh4OHVyNDNwWEgzX1FNekJXZXJRUFdyWDAyUEprSzlDemwzaGM2MGZBIn0.eyJqdGkiOiJmYmViODJjNi0zMDg5LTQzYzgtOGFlMC0wOTA4OGU0Yjk4NGIiLCJleHAiOjE2MTY3OTEwOTcsIm5iZiI6MCwiaWF0IjoxNjE2NzQ3ODk3LCJpc3MiOiJodHRwczovL3N0YWdpbmcuc3VuYmlyZGVkLm9yZy9hdXRoL3JlYWxtcy9zdW5iaXJkIiwiYXVkIjpbInJlYWxtLW1hbmFnZW1lbnQiLCJhY2NvdW50Il0sInN1YiI6IjliYjg4NGZjLThhNTYtNDcyNy05NTIyLTI1YTdkNWI4ZWEwNiIsInR5cCI6IkJlYXJlciIsImF6cCI6ImxtcyIsImF1dGhfdGltZSI6MCwic2Vzc2lvbl9zdGF0ZSI6IjY5Y2ExNjcwLWZlY2QtNDdiMi04N2UwLTdkMzU0NGE5N2Y0YSIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cHM6Ly9zdGFnaW5nLnN1bmJpcmRlZC5vcmciXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiYWRtaW4iLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7InJlYWxtLW1hbmFnZW1lbnQiOnsicm9sZXMiOlsibWFuYWdlLXVzZXJzIl19LCJsbXMiOnsicm9sZXMiOlsidW1hX3Byb3RlY3Rpb24iXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoiIiwiY2xpZW50SWQiOiJsbXMiLCJjbGllbnRIb3N0IjoiMTE3LjIxNy41Ny43NCIsInByZWZlcnJlZF91c2VybmFtZSI6InNlcnZpY2UtYWNjb3VudC1sbXMiLCJjbGllbnRBZGRyZXNzIjoiMTE3LjIxNy41Ny43NCIsImVtYWlsIjoic2VydmljZS1hY2NvdW50LWxtc0BwbGFjZWhvbGRlci5vcmcifQ.Kg3OjeLXs-5xsU9H9yVW4KUul0soSAd2uMc5DID9_mQYMP2zwuwkH53TKqycP60uB5M_sgR1C3sxPSJD3v5rxHYJNBR5ivDkrGZOdZDBtBVrB2gt--7B7V7IL5W-St37-dTTsj93LqDwO09cS30jAephUkO7Hdhu3manHbtFFAJjBAeXHRTxszYOA9bTekicimy1V6i-IgNt6hSxpew20r2K4dq5gomOubk0rM-tpcaNokBZVlx8y2Avmaws2x_VbTBjrmGm00I1F1NQ2u8U1o7T3QrcEcMYNL83Utm9VzILqsbjc1RJCJ64qgnyjz8Tg9LMxB_qao3rVIBm8xJqQw
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 26 Mar 2021 08:38:22 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+X-RateLimit-Limit-hour: 1000000
+X-RateLimit-Remaining-hour: 999998
+Request-Time: 15
+Access-Control-Allow-Origin: *
+X-Kong-Upstream-Latency: 15
+X-Kong-Proxy-Latency: 0
+Via: kong/0.14.1
+Content-Encoding: gzip
+
+{
+    "id": "api.content.read",
+    "ver": "3.0",
+    "ts": "2021-03-26T08:38:22ZZ",
+    "params": {
+        "resmsgid": "58fcd957-392c-43d4-98a3-504cb7ca1e73",
+        "msgid": null,
+        "err": null,
+        "status": "successful",
+        "errmsg": null
+    },
+    "responseCode": "OK",
+    "result": {
+        "content": {
+            "ownershipType": [
+                "createdBy"
+            ],
+            "code": "test",
+            "credentials": {
+                "enabled": "No"
+            },
+            "channel": "in.ekstep",
+            "description": "test",
+            "language": [
+                "English"
+            ],
+            "mimeType": "application/vnd.ekstep.html-archive",
+            "idealScreenSize": "normal",
+            "createdOn": "2021-03-26T08:38:22.439+0000",
+            "objectType": "Content",
+            "primaryCategory": "Content Playlist",
+            "contentDisposition": "inline",
+            "lastUpdatedOn": "2021-03-26T08:38:22.439+0000",
+            "contentEncoding": "gzip",
+            "contentType": "Collection",
+            "dialcodeRequired": "No",
+            "trackable": {
+                "enabled": "No",
+                "autoBatch": "No"
+            },
+            "identifier": "do_2132443988167720961754",
+            "lastStatusChangedOn": "2021-03-26T08:38:22.439+0000",
+            "audience": [
+                "Student"
+            ],
+            "os": [
+                "All"
+            ],
+            "visibility": "Default",
+            "consumerId": "90a5d33b-8006-4a0a-8c70-eeab2aa2e894",
+            "mediaType": "content",
+            "osId": "org.ekstep.quiz.app",
+            "languageCode": [
+                "en"
+            ],
+            "version": 2,
+            "versionKey": "1616747902439",
+            "license": "CC BY 4.0",
+            "idealScreenDensity": "hdpi",
+            "framework": "NCF",
+            "compatibilityLevel": 1,
+            "name": "test2",
+            "status": "Draft"
+        }
+    }
+}
+Request method:	POST
+Request URI:	https://staging.sunbirded.org/api/private/content/v3/create
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Channel-Id=in.ekstep
+				user-id=system
+				Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJiZW1mME1NR1RrNnVocVBwNW51bjA2T0pxSHJReTBwOCJ9.FSHIAdPdyJ-0ijYr7HPZUJ0ST974ccXZXZIhVXoZluI
+				x-authenticated-user-token=eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJHUnh4OHVyNDNwWEgzX1FNekJXZXJRUFdyWDAyUEprSzlDemwzaGM2MGZBIn0.eyJqdGkiOiJmYmViODJjNi0zMDg5LTQzYzgtOGFlMC0wOTA4OGU0Yjk4NGIiLCJleHAiOjE2MTY3OTEwOTcsIm5iZiI6MCwiaWF0IjoxNjE2NzQ3ODk3LCJpc3MiOiJodHRwczovL3N0YWdpbmcuc3VuYmlyZGVkLm9yZy9hdXRoL3JlYWxtcy9zdW5iaXJkIiwiYXVkIjpbInJlYWxtLW1hbmFnZW1lbnQiLCJhY2NvdW50Il0sInN1YiI6IjliYjg4NGZjLThhNTYtNDcyNy05NTIyLTI1YTdkNWI4ZWEwNiIsInR5cCI6IkJlYXJlciIsImF6cCI6ImxtcyIsImF1dGhfdGltZSI6MCwic2Vzc2lvbl9zdGF0ZSI6IjY5Y2ExNjcwLWZlY2QtNDdiMi04N2UwLTdkMzU0NGE5N2Y0YSIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cHM6Ly9zdGFnaW5nLnN1bmJpcmRlZC5vcmciXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiYWRtaW4iLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7InJlYWxtLW1hbmFnZW1lbnQiOnsicm9sZXMiOlsibWFuYWdlLXVzZXJzIl19LCJsbXMiOnsicm9sZXMiOlsidW1hX3Byb3RlY3Rpb24iXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoiIiwiY2xpZW50SWQiOiJsbXMiLCJjbGllbnRIb3N0IjoiMTE3LjIxNy41Ny43NCIsInByZWZlcnJlZF91c2VybmFtZSI6InNlcnZpY2UtYWNjb3VudC1sbXMiLCJjbGllbnRBZGRyZXNzIjoiMTE3LjIxNy41Ny43NCIsImVtYWlsIjoic2VydmljZS1hY2NvdW50LWxtc0BwbGFjZWhvbGRlci5vcmcifQ.Kg3OjeLXs-5xsU9H9yVW4KUul0soSAd2uMc5DID9_mQYMP2zwuwkH53TKqycP60uB5M_sgR1C3sxPSJD3v5rxHYJNBR5ivDkrGZOdZDBtBVrB2gt--7B7V7IL5W-St37-dTTsj93LqDwO09cS30jAephUkO7Hdhu3manHbtFFAJjBAeXHRTxszYOA9bTekicimy1V6i-IgNt6hSxpew20r2K4dq5gomOubk0rM-tpcaNokBZVlx8y2Avmaws2x_VbTBjrmGm00I1F1NQ2u8U1o7T3QrcEcMYNL83Utm9VzILqsbjc1RJCJ64qgnyjz8Tg9LMxB_qao3rVIBm8xJqQw
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "request": {
+        "content": {
+            "code": "test",
+            "name": "test3",
+            "mimeType": "application/vnd.ekstep.content-collection",
+            "contentType": "TextBook",
+            "description": "test"
+        }
+    }
+}
+HTTP/1.1 200 OK
+Date: Fri, 26 Mar 2021 08:38:24 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+X-RateLimit-Limit-hour: 1000000
+X-RateLimit-Remaining-hour: 999997
+Request-Time: 1057
+Access-Control-Allow-Origin: *
+X-Kong-Upstream-Latency: 1058
+X-Kong-Proxy-Latency: 0
+Via: kong/0.14.1
+Content-Encoding: gzip
+
+{
+    "id": "api.content.create",
+    "ver": "3.0",
+    "ts": "2021-03-26T08:38:24ZZ",
+    "params": {
+        "resmsgid": "d8ff54e0-fcfb-442f-b6d8-f6ae84c8b1b5",
+        "msgid": null,
+        "err": null,
+        "status": "successful",
+        "errmsg": null
+    },
+    "responseCode": "OK",
+    "result": {
+        "identifier": "do_2132443988329512961755",
+        "node_id": "do_2132443988329512961755",
+        "versionKey": "1616747904414"
+    }
+}
+Request method:	GET
+Request URI:	https://staging.sunbirded.org/api/private/content/v3/read/do_2132443988329512961755
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	do_id=do_2132443988329512961755
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJiZW1mME1NR1RrNnVocVBwNW51bjA2T0pxSHJReTBwOCJ9.FSHIAdPdyJ-0ijYr7HPZUJ0ST974ccXZXZIhVXoZluI
+				x-authenticated-user-token=eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJHUnh4OHVyNDNwWEgzX1FNekJXZXJRUFdyWDAyUEprSzlDemwzaGM2MGZBIn0.eyJqdGkiOiJmYmViODJjNi0zMDg5LTQzYzgtOGFlMC0wOTA4OGU0Yjk4NGIiLCJleHAiOjE2MTY3OTEwOTcsIm5iZiI6MCwiaWF0IjoxNjE2NzQ3ODk3LCJpc3MiOiJodHRwczovL3N0YWdpbmcuc3VuYmlyZGVkLm9yZy9hdXRoL3JlYWxtcy9zdW5iaXJkIiwiYXVkIjpbInJlYWxtLW1hbmFnZW1lbnQiLCJhY2NvdW50Il0sInN1YiI6IjliYjg4NGZjLThhNTYtNDcyNy05NTIyLTI1YTdkNWI4ZWEwNiIsInR5cCI6IkJlYXJlciIsImF6cCI6ImxtcyIsImF1dGhfdGltZSI6MCwic2Vzc2lvbl9zdGF0ZSI6IjY5Y2ExNjcwLWZlY2QtNDdiMi04N2UwLTdkMzU0NGE5N2Y0YSIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cHM6Ly9zdGFnaW5nLnN1bmJpcmRlZC5vcmciXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiYWRtaW4iLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7InJlYWxtLW1hbmFnZW1lbnQiOnsicm9sZXMiOlsibWFuYWdlLXVzZXJzIl19LCJsbXMiOnsicm9sZXMiOlsidW1hX3Byb3RlY3Rpb24iXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoiIiwiY2xpZW50SWQiOiJsbXMiLCJjbGllbnRIb3N0IjoiMTE3LjIxNy41Ny43NCIsInByZWZlcnJlZF91c2VybmFtZSI6InNlcnZpY2UtYWNjb3VudC1sbXMiLCJjbGllbnRBZGRyZXNzIjoiMTE3LjIxNy41Ny43NCIsImVtYWlsIjoic2VydmljZS1hY2NvdW50LWxtc0BwbGFjZWhvbGRlci5vcmcifQ.Kg3OjeLXs-5xsU9H9yVW4KUul0soSAd2uMc5DID9_mQYMP2zwuwkH53TKqycP60uB5M_sgR1C3sxPSJD3v5rxHYJNBR5ivDkrGZOdZDBtBVrB2gt--7B7V7IL5W-St37-dTTsj93LqDwO09cS30jAephUkO7Hdhu3manHbtFFAJjBAeXHRTxszYOA9bTekicimy1V6i-IgNt6hSxpew20r2K4dq5gomOubk0rM-tpcaNokBZVlx8y2Avmaws2x_VbTBjrmGm00I1F1NQ2u8U1o7T3QrcEcMYNL83Utm9VzILqsbjc1RJCJ64qgnyjz8Tg9LMxB_qao3rVIBm8xJqQw
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 26 Mar 2021 08:38:24 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+X-RateLimit-Limit-hour: 1000000
+X-RateLimit-Remaining-hour: 999997
+Request-Time: 8
+Access-Control-Allow-Origin: *
+X-Kong-Upstream-Latency: 10
+X-Kong-Proxy-Latency: 3
+Via: kong/0.14.1
+Content-Encoding: gzip
+
+{
+    "id": "api.content.read",
+    "ver": "3.0",
+    "ts": "2021-03-26T08:38:24ZZ",
+    "params": {
+        "resmsgid": "bc3bd46c-f15c-4c05-ac8d-824b5b94d5f4",
+        "msgid": null,
+        "err": null,
+        "status": "successful",
+        "errmsg": null
+    },
+    "responseCode": "OK",
+    "result": {
+        "content": {
+            "ownershipType": [
+                "createdBy"
+            ],
+            "code": "test",
+            "credentials": {
+                "enabled": "No"
+            },
+            "channel": "in.ekstep",
+            "description": "test",
+            "language": [
+                "English"
+            ],
+            "mimeType": "application/vnd.ekstep.content-collection",
+            "idealScreenSize": "normal",
+            "createdOn": "2021-03-26T08:38:24.414+0000",
+            "objectType": "Content",
+            "primaryCategory": "Digital Textbook",
+            "contentDisposition": "inline",
+            "lastUpdatedOn": "2021-03-26T08:38:24.414+0000",
+            "contentEncoding": "gzip",
+            "contentType": "TextBook",
+            "dialcodeRequired": "No",
+            "trackable": {
+                "enabled": "No",
+                "autoBatch": "No"
+            },
+            "identifier": "do_2132443988329512961755",
+            "lastStatusChangedOn": "2021-03-26T08:38:24.414+0000",
+            "audience": [
+                "Student"
+            ],
+            "os": [
+                "All"
+            ],
+            "visibility": "Default",
+            "consumerId": "90a5d33b-8006-4a0a-8c70-eeab2aa2e894",
+            "mediaType": "content",
+            "osId": "org.ekstep.quiz.app",
+            "languageCode": [
+                "en"
+            ],
+            "version": 2,
+            "versionKey": "1616747904414",
+            "license": "CC BY 4.0",
+            "idealScreenDensity": "hdpi",
+            "compatibilityLevel": 1,
+            "userConsent": "Yes",
+            "name": "test3",
+            "status": "Draft"
+        }
+    }
+}
+Request method:	PATCH
+Request URI:	https://staging.sunbirded.org/api/private/content/v3/update/do_2132443988329512961755
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	do_id=do_2132443988329512961755
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJiZW1mME1NR1RrNnVocVBwNW51bjA2T0pxSHJReTBwOCJ9.FSHIAdPdyJ-0ijYr7HPZUJ0ST974ccXZXZIhVXoZluI
+				x-authenticated-user-token=eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJHUnh4OHVyNDNwWEgzX1FNekJXZXJRUFdyWDAyUEprSzlDemwzaGM2MGZBIn0.eyJqdGkiOiJmYmViODJjNi0zMDg5LTQzYzgtOGFlMC0wOTA4OGU0Yjk4NGIiLCJleHAiOjE2MTY3OTEwOTcsIm5iZiI6MCwiaWF0IjoxNjE2NzQ3ODk3LCJpc3MiOiJodHRwczovL3N0YWdpbmcuc3VuYmlyZGVkLm9yZy9hdXRoL3JlYWxtcy9zdW5iaXJkIiwiYXVkIjpbInJlYWxtLW1hbmFnZW1lbnQiLCJhY2NvdW50Il0sInN1YiI6IjliYjg4NGZjLThhNTYtNDcyNy05NTIyLTI1YTdkNWI4ZWEwNiIsInR5cCI6IkJlYXJlciIsImF6cCI6ImxtcyIsImF1dGhfdGltZSI6MCwic2Vzc2lvbl9zdGF0ZSI6IjY5Y2ExNjcwLWZlY2QtNDdiMi04N2UwLTdkMzU0NGE5N2Y0YSIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cHM6Ly9zdGFnaW5nLnN1bmJpcmRlZC5vcmciXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiYWRtaW4iLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7InJlYWxtLW1hbmFnZW1lbnQiOnsicm9sZXMiOlsibWFuYWdlLXVzZXJzIl19LCJsbXMiOnsicm9sZXMiOlsidW1hX3Byb3RlY3Rpb24iXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoiIiwiY2xpZW50SWQiOiJsbXMiLCJjbGllbnRIb3N0IjoiMTE3LjIxNy41Ny43NCIsInByZWZlcnJlZF91c2VybmFtZSI6InNlcnZpY2UtYWNjb3VudC1sbXMiLCJjbGllbnRBZGRyZXNzIjoiMTE3LjIxNy41Ny43NCIsImVtYWlsIjoic2VydmljZS1hY2NvdW50LWxtc0BwbGFjZWhvbGRlci5vcmcifQ.Kg3OjeLXs-5xsU9H9yVW4KUul0soSAd2uMc5DID9_mQYMP2zwuwkH53TKqycP60uB5M_sgR1C3sxPSJD3v5rxHYJNBR5ivDkrGZOdZDBtBVrB2gt--7B7V7IL5W-St37-dTTsj93LqDwO09cS30jAephUkO7Hdhu3manHbtFFAJjBAeXHRTxszYOA9bTekicimy1V6i-IgNt6hSxpew20r2K4dq5gomOubk0rM-tpcaNokBZVlx8y2Avmaws2x_VbTBjrmGm00I1F1NQ2u8U1o7T3QrcEcMYNL83Utm9VzILqsbjc1RJCJ64qgnyjz8Tg9LMxB_qao3rVIBm8xJqQw
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "request": {
+        "content": {
+            "versionKey": "1599566566665",
+            "userConsent": "Yes",
+            "trackable": {
+                "enabled": "Yes",
+                "autoBatch": "Yes"
+            }
+        }
+    }
+}
+HTTP/1.1 200 OK
+Date: Fri, 26 Mar 2021 08:38:25 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+X-RateLimit-Limit-hour: 1000000
+X-RateLimit-Remaining-hour: 999999
+Request-Time: 53
+Access-Control-Allow-Origin: *
+X-Kong-Upstream-Latency: 54
+X-Kong-Proxy-Latency: 0
+Via: kong/0.14.1
+Content-Encoding: gzip
+
+{
+    "id": "api.content.update",
+    "ver": "3.0",
+    "ts": "2021-03-26T08:38:25ZZ",
+    "params": {
+        "resmsgid": "3ccb16b8-0416-45f9-8ab3-87a5baea1a4f",
+        "msgid": null,
+        "err": null,
+        "status": "successful",
+        "errmsg": null
+    },
+    "responseCode": "OK",
+    "result": {
+        "identifier": "do_2132443988329512961755",
+        "node_id": "do_2132443988329512961755",
+        "versionKey": "1616747905325"
+    }
+}
+Request method:	GET
+Request URI:	https://staging.sunbirded.org/api/private/content/v3/read/do_2132443988329512961755
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	do_id=do_2132443988329512961755
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJiZW1mME1NR1RrNnVocVBwNW51bjA2T0pxSHJReTBwOCJ9.FSHIAdPdyJ-0ijYr7HPZUJ0ST974ccXZXZIhVXoZluI
+				x-authenticated-user-token=eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJHUnh4OHVyNDNwWEgzX1FNekJXZXJRUFdyWDAyUEprSzlDemwzaGM2MGZBIn0.eyJqdGkiOiJmYmViODJjNi0zMDg5LTQzYzgtOGFlMC0wOTA4OGU0Yjk4NGIiLCJleHAiOjE2MTY3OTEwOTcsIm5iZiI6MCwiaWF0IjoxNjE2NzQ3ODk3LCJpc3MiOiJodHRwczovL3N0YWdpbmcuc3VuYmlyZGVkLm9yZy9hdXRoL3JlYWxtcy9zdW5iaXJkIiwiYXVkIjpbInJlYWxtLW1hbmFnZW1lbnQiLCJhY2NvdW50Il0sInN1YiI6IjliYjg4NGZjLThhNTYtNDcyNy05NTIyLTI1YTdkNWI4ZWEwNiIsInR5cCI6IkJlYXJlciIsImF6cCI6ImxtcyIsImF1dGhfdGltZSI6MCwic2Vzc2lvbl9zdGF0ZSI6IjY5Y2ExNjcwLWZlY2QtNDdiMi04N2UwLTdkMzU0NGE5N2Y0YSIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cHM6Ly9zdGFnaW5nLnN1bmJpcmRlZC5vcmciXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiYWRtaW4iLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7InJlYWxtLW1hbmFnZW1lbnQiOnsicm9sZXMiOlsibWFuYWdlLXVzZXJzIl19LCJsbXMiOnsicm9sZXMiOlsidW1hX3Byb3RlY3Rpb24iXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoiIiwiY2xpZW50SWQiOiJsbXMiLCJjbGllbnRIb3N0IjoiMTE3LjIxNy41Ny43NCIsInByZWZlcnJlZF91c2VybmFtZSI6InNlcnZpY2UtYWNjb3VudC1sbXMiLCJjbGllbnRBZGRyZXNzIjoiMTE3LjIxNy41Ny43NCIsImVtYWlsIjoic2VydmljZS1hY2NvdW50LWxtc0BwbGFjZWhvbGRlci5vcmcifQ.Kg3OjeLXs-5xsU9H9yVW4KUul0soSAd2uMc5DID9_mQYMP2zwuwkH53TKqycP60uB5M_sgR1C3sxPSJD3v5rxHYJNBR5ivDkrGZOdZDBtBVrB2gt--7B7V7IL5W-St37-dTTsj93LqDwO09cS30jAephUkO7Hdhu3manHbtFFAJjBAeXHRTxszYOA9bTekicimy1V6i-IgNt6hSxpew20r2K4dq5gomOubk0rM-tpcaNokBZVlx8y2Avmaws2x_VbTBjrmGm00I1F1NQ2u8U1o7T3QrcEcMYNL83Utm9VzILqsbjc1RJCJ64qgnyjz8Tg9LMxB_qao3rVIBm8xJqQw
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 26 Mar 2021 08:38:25 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+X-RateLimit-Limit-hour: 1000000
+X-RateLimit-Remaining-hour: 999996
+Request-Time: 6
+Access-Control-Allow-Origin: *
+X-Kong-Upstream-Latency: 7
+X-Kong-Proxy-Latency: 0
+Via: kong/0.14.1
+Content-Encoding: gzip
+
+{
+    "id": "api.content.read",
+    "ver": "3.0",
+    "ts": "2021-03-26T08:38:25ZZ",
+    "params": {
+        "resmsgid": "56f94873-0a41-4110-868f-320a1399852d",
+        "msgid": null,
+        "err": null,
+        "status": "successful",
+        "errmsg": null
+    },
+    "responseCode": "OK",
+    "result": {
+        "content": {
+            "ownershipType": [
+                "createdBy"
+            ],
+            "code": "test",
+            "credentials": {
+                "enabled": "No"
+            },
+            "channel": "in.ekstep",
+            "description": "test",
+            "language": [
+                "English"
+            ],
+            "mimeType": "application/vnd.ekstep.content-collection",
+            "idealScreenSize": "normal",
+            "createdOn": "2021-03-26T08:38:24.414+0000",
+            "objectType": "Content",
+            "primaryCategory": "Digital Textbook",
+            "contentDisposition": "inline",
+            "lastUpdatedOn": "2021-03-26T08:38:25.325+0000",
+            "contentEncoding": "gzip",
+            "contentType": "Course",
+            "dialcodeRequired": "No",
+            "trackable": {
+                "enabled": "Yes",
+                "autoBatch": "Yes"
+            },
+            "identifier": "do_2132443988329512961755",
+            "lastStatusChangedOn": "2021-03-26T08:38:24.414+0000",
+            "audience": [
+                "Student"
+            ],
+            "os": [
+                "All"
+            ],
+            "visibility": "Default",
+            "consumerId": "90a5d33b-8006-4a0a-8c70-eeab2aa2e894",
+            "mediaType": "content",
+            "osId": "org.ekstep.quiz.app",
+            "languageCode": [
+                "en"
+            ],
+            "version": 2,
+            "versionKey": "1616747905325",
+            "license": "CC BY 4.0",
+            "idealScreenDensity": "hdpi",
+            "compatibilityLevel": 1,
+            "userConsent": "Yes",
+            "name": "test3",
+            "status": "Draft"
+        }
+    }
+}
