@@ -48,18 +48,18 @@ public class users {
     @Then("^\"([^\"]*)\" got created in response body$")
     public void something_got_created_in_response_body(String strArg1) throws Throwable {
     	//String USERID;
-    	String s123 = resspec.then().log().all().assertThat().statusCode(200).extract().response().asString();
-    	System.out.println(s123);
-    	JsonPath js1 =reUseableMethods.RawToJson(s123);
-    	USERID = js1.getString("result.userId").toString();
+    	String str = resspec.then().log().all().assertThat().statusCode(200).extract().response().asString();
+    	System.out.println(str);
+    	JsonPath js =reUseableMethods.RawToJson(str);
+    	USERID = js.getString("result.userId").toString();
     	System.out.println("Response body Contains userId: " + USERID);
     }
     
     @And("^SUCCESS is present in response result$")
     public void success_is_present_in_response_result() throws Throwable {
-    	String s123 = resspec.then().log().all().assertThat().statusCode(200).extract().response().asString();
-    	JsonPath js1 =reUseableMethods.RawToJson(s123);
-    	String response = js1.getString("result.response");
+    	String str = resspec.then().log().all().assertThat().statusCode(200).extract().response().asString();
+    	JsonPath js =reUseableMethods.RawToJson(str);
+    	String response = js.getString("result.response");
     	if (response.contentEquals("SUCCESS"))
     	{
     		System.out.println("Create API response returning: " + response);
@@ -76,9 +76,9 @@ public class users {
 
     @And("^responseCode contains OK$")
     public void responsecode_contains_ok() throws Throwable {
-    	String s123 = resspec.then().log().all().assertThat().statusCode(200).extract().response().asString();
-    	JsonPath js1 =reUseableMethods.RawToJson(s123);
-    	String responseCode = js1.getString("responseCode");
+    	String str = resspec.then().log().all().assertThat().statusCode(200).extract().response().asString();
+    	JsonPath js =reUseableMethods.RawToJson(str);
+    	String responseCode = js.getString("responseCode");
     	if (responseCode.matches("OK"))
     	{
     		System.out.println("Create user api returns responseCode: " + responseCode);
@@ -203,8 +203,8 @@ public class users {
     public void err_message_shows_as_invalidpassword() throws Throwable {
     	//String results =resspec.then().extract().response().asString();
     	//JsonPath js = new JsonPath(results);
-    	String str1=resspec.getBody().asString();
-    	if (str1.contains("INVALID_PASSWORD"))
+    	String str=resspec.getBody().asString();
+    	if (str.contains("INVALID_PASSWORD"))
     	{
     	
     	System.out.println("Returning INVALID_PASSWORD");
