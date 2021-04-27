@@ -1,0 +1,1578 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "User getting created successfully",
+        "description": "",
+        "id": "user-apis;user-getting-created-successfully",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 631615146,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Request userCreateAPI with email in payload",
+            "match": {
+              "location": "users.request_usercreateapi_with_something_in_payload()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 14771790482,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Request with email POST calls",
+            "match": {
+              "location": "users.request_with_email_POST_calls()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 876740623,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "\"UserId\" got created in response body",
+            "match": {
+              "arguments": [
+                {
+                  "val": "UserId",
+                  "offset": 1
+                }
+              ],
+              "location": "users.something_got_created_in_response_body(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 19873932,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "SUCCESS is present in response result",
+            "match": {
+              "location": "users.success_is_present_in_response_result()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1786795,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Response header contains 200 as status",
+            "match": {
+              "location": "users.response_header_contains_200_as_status()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 20955871,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "responseCode contains OK",
+            "match": {
+              "location": "users.responsecode_contains_ok()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@User"
+          }
+        ]
+      },
+      {
+        "line": 21,
+        "name": "Getting proper error message user Create api requested with incorrect inputdata",
+        "description": "",
+        "id": "user-apis;getting-proper-error-message-user-create-api-requested-with-incorrect-inputdata;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2618581,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Request API with existing user user\u0027s \"test+1615363082542@yopmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"test+1615363082542@yopmail.com\"",
+                  "offset": 38
+                }
+              ],
+              "location": "users.request_api_with_existing_user_users_email_id(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8188593253,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Request with post calls",
+            "match": {
+              "location": "users.request_with_post_calls()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 13019188,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Status shows as Failed",
+            "match": {
+              "location": "users.status_shows_as_failed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 215591,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Return 400 as StatusCode",
+            "match": {
+              "location": "users.return_400_as_statuscode()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8777174,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "err shows as EMAIL_IN_USE",
+            "match": {
+              "location": "users.err_shows_as_emailinuse()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@User"
+          }
+        ]
+      },
+      {
+        "line": 31,
+        "name": "Getting proper error message when user Create api requested with invalid email",
+        "description": "",
+        "id": "user-apis;getting-proper-error-message-when-user-create-api-requested-with-invalid-email;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1426535,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Request API with invalid \"testaccount5\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "testaccount5",
+                  "offset": 26
+                }
+              ],
+              "location": "users.request_api_with_invalid_something(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 482991966,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "Request with post calls with invalid email id",
+            "match": {
+              "location": "users.request_with_post_calls_with_invalid_email_id()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 207516,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "Return 400 as StatusCode with invalid email id",
+            "match": {
+              "location": "users.return_400_as_statuscode_with_invalid_email_id()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 12140970,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "err message shows as EMAIL_FORMAT_ERROR",
+            "match": {
+              "location": "users.err_message_shows_as_emailformaterror()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@User"
+          }
+        ]
+      },
+      {
+        "line": 41,
+        "name": "Getting proper error message when user Create api requested with invalid password",
+        "description": "",
+        "id": "user-apis;getting-proper-error-message-when-user-create-api-requested-with-invalid-password;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1133945,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "Request API with invalid password \"Password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Password",
+                  "offset": 35
+                }
+              ],
+              "location": "users.request_api_with_invalid_password_something(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 471370931,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "Request with post calls  with invalid password",
+            "match": {
+              "location": "users.request_with_post_calls_with_invalid_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 80782,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "Return 400 as StatusCode  with invalid password",
+            "match": {
+              "location": "users.return_as_StatusCode_with_invalid_password()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 253864,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "err message shows as INVALID_PASSWORD",
+            "match": {
+              "location": "users.err_message_shows_as_invalidpassword()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@User"
+          }
+        ]
+      },
+      {
+        "line": 51,
+        "name": "Update Users name",
+        "description": "",
+        "id": "user-apis;update-users-name;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4974099258,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "Update user\u0027s \"Medha Paul\" for \"a1e64b41-16cd-47f7-989d-a605e740d040\" with payload with valid user \"token\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Medha Paul",
+                  "offset": 15
+                },
+                {
+                  "val": "a1e64b41-16cd-47f7-989d-a605e740d040",
+                  "offset": 32
+                },
+                {
+                  "val": "token",
+                  "offset": 100
+                }
+              ],
+              "location": "users.update_users_something_for_something_with_payload_with_valid_user_something(String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3247072807,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "Request udate user with PATCH request call",
+            "match": {
+              "location": "users.request_udate_user_with_patch_request_call()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 15473782,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "User\u0027s Name updated successfull and retruns 200",
+            "match": {
+              "location": "users.users_name_updated_successfull_and_retruns_200()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 14231984,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "Update user\u0027s API Response shows as SUCCESS",
+            "match": {
+              "location": "users.update_users_api_response_shows_as_success()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@User"
+          }
+        ]
+      },
+      {
+        "line": 62,
+        "name": "Getting proper error message when request body contains empty userId field",
+        "description": "",
+        "id": "user-apis;getting-proper-error-message-when-request-body-contains-empty-userid-field;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 891248033,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "Update User\u0027s \"Megha\" for blank \"\" with valid \"token\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Megha",
+                  "offset": 15
+                },
+                {
+                  "val": "",
+                  "offset": 33
+                },
+                {
+                  "val": "token",
+                  "offset": 47
+                }
+              ],
+              "location": "users.update_users_something_for_blank_something_with_valid_something(String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 489570654,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "Request update user api with PATCH request when userId is blank",
+            "match": {
+              "location": "users.request_update_user_api_with_patch_request_when_userid_is_blank()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 303436,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "Validate that the resonse return 400 status code",
+            "match": {
+              "location": "users.validate_that_the_resonse_return_400_status_code()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 13077059,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "Validate response body returns correct error message for blank userId",
+            "match": {
+              "location": "users.validate_response_body_returns_correct_error_message_for_blank_userid()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@User"
+          }
+        ]
+      },
+      {
+        "line": 72,
+        "name": "Getting proper error message when request body doesn\u0027t contain userId",
+        "description": "",
+        "id": "user-apis;getting-proper-error-message-when-request-body-doesn-t-contain-userid;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 917008823,
+              "status": "passed"
+            },
+            "line": 66,
+            "name": "Update User\u0027s \"Megha\" without userid in request body with valid \"token\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Megha",
+                  "offset": 15
+                },
+                {
+                  "val": "token",
+                  "offset": 65
+                }
+              ],
+              "location": "users.update_users_something_without_userid_in_request_body_with_valid_something(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 515858254,
+              "status": "passed"
+            },
+            "line": 67,
+            "name": "Request with PATCH request without userId",
+            "match": {
+              "location": "users.request_with_patch_request_without_userid()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 501469,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "Return 400 statuscode when requested withour userId",
+            "match": {
+              "location": "users.return_400_statuscode_when_requested_withour_userid()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 11420568,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "Correct error message retruns when requested without userId",
+            "match": {
+              "location": "users.correct_error_message_retruns_when_requested_without_userid()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@User"
+          }
+        ]
+      },
+      {
+        "line": 85,
+        "name": "User Read API working fine",
+        "description": "",
+        "id": "user-apis;user-read-api-working-fine;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4362956493,
+              "status": "passed"
+            },
+            "line": 76,
+            "name": "Request userReadAPI with payload with valid \"token\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "token",
+                  "offset": 45
+                }
+              ],
+              "location": "users.request_userreadapi_with_payload_with_valid_something(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 516700296,
+              "status": "passed"
+            },
+            "line": 77,
+            "name": "Request with \"a1e64b41-16cd-47f7-989d-a605e740d040\" in GET call",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"a1e64b41-16cd-47f7-989d-a605e740d040\"",
+                  "offset": 13
+                }
+              ],
+              "location": "users.request_with_in_GET_call(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 39992075,
+              "status": "passed"
+            },
+            "line": 78,
+            "name": "userid available in response",
+            "match": {
+              "location": "users.userid_available_in_response()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5461078,
+              "status": "passed"
+            },
+            "line": 79,
+            "name": "ResponseCode returns 200 code",
+            "match": {
+              "location": "users.responsecode_returns_200_code()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 17027151,
+              "status": "passed"
+            },
+            "line": 80,
+            "name": "OrgId is present in responseBody",
+            "match": {
+              "location": "users.orgid_is_present_in_responsebody()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 17342263,
+              "status": "passed"
+            },
+            "line": 81,
+            "name": "user Role field is present in responseBody",
+            "match": {
+              "location": "users.user_role_field_is_present_in_responsebody()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 16677685,
+              "status": "passed"
+            },
+            "line": 82,
+            "name": "userName is present in responseBody",
+            "match": {
+              "location": "users.username_is_present_in_responsebody()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@User"
+          }
+        ]
+      },
+      {
+        "line": 95,
+        "name": "User Read API returing proper message when requested withinvalid userId",
+        "description": "",
+        "id": "user-apis;user-read-api-returing-proper-message-when-requested-withinvalid-userid;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 735010655,
+              "status": "passed"
+            },
+            "line": 89,
+            "name": "RequestBody with valid user \"token\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "token",
+                  "offset": 29
+                }
+              ],
+              "location": "users.requestbody_with_valid_user_something(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 538025699,
+              "status": "passed"
+            },
+            "line": 90,
+            "name": "Request with invalid \"5c89aaec-d78f-4a13-abfd-39d76fdd9f6c\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5c89aaec-d78f-4a13-abfd-39d76fdd9f6c",
+                  "offset": 22
+                }
+              ],
+              "location": "users.request_with_invalid_something(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 214623,
+              "status": "passed"
+            },
+            "line": 91,
+            "name": "Returns 400 code when requested with invalid userid",
+            "match": {
+              "location": "users.returns_400_code_when_requested_with_invalid_userid()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 13907743,
+              "status": "passed"
+            },
+            "line": 92,
+            "name": "userNotFound error message displayed",
+            "match": {
+              "location": "users.usernotfound_error_message_displayed()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@User"
+          }
+        ]
+      },
+      {
+        "line": 105,
+        "name": "Search users with userName",
+        "description": "",
+        "id": "user-apis;search-users-with-username;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 908136100,
+              "status": "passed"
+            },
+            "line": 99,
+            "name": "Search user with \"creatortest_475l\" and valid \"token\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "creatortest_475l",
+                  "offset": 18
+                },
+                {
+                  "val": "token",
+                  "offset": 47
+                }
+              ],
+              "location": "users.search_user_with_something_and_valid_something(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 531580121,
+              "status": "passed"
+            },
+            "line": 100,
+            "name": "Request with POST request call",
+            "match": {
+              "location": "users.request_with_post_request_call()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 102938,
+              "status": "passed"
+            },
+            "line": 101,
+            "name": "Search result returns 200 statuscode",
+            "match": {
+              "location": "users.search_result_returns_200_statuscode()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8967632,
+              "status": "passed"
+            },
+            "line": 102,
+            "name": "identifier is present in when requested with userName",
+            "match": {
+              "location": "users.identifier_is_present_in_when_requested_with_username()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@User"
+          }
+        ]
+      },
+      {
+        "line": 115,
+        "name": "Search users with userId",
+        "description": "",
+        "id": "user-apis;search-users-with-userid;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 641188415,
+              "status": "passed"
+            },
+            "line": 109,
+            "name": "Search user with \"5c89aaec-d78f-4a13-abfd-39d76fdd9f6c\" userId and valid \"token\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5c89aaec-d78f-4a13-abfd-39d76fdd9f6c",
+                  "offset": 18
+                },
+                {
+                  "val": "token",
+                  "offset": 74
+                }
+              ],
+              "location": "users.search_user_with_something_userid_and_valid_something(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 593585953,
+              "status": "passed"
+            },
+            "line": 110,
+            "name": "Request with POST call with userId",
+            "match": {
+              "location": "users.request_with_post_call_with_userid()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 130750,
+              "status": "passed"
+            },
+            "line": 111,
+            "name": "Search result returns 200 statuscode when requested with userId",
+            "match": {
+              "location": "users.search_result_returns_200_statuscode_when_requested_with_userid()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10585190,
+              "status": "passed"
+            },
+            "line": 112,
+            "name": "identifier is present in responseBody",
+            "match": {
+              "location": "users.identifier_is_present_in_responsebody()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@User"
+          }
+        ]
+      },
+      {
+        "line": 124,
+        "name": "Search users with emailId",
+        "description": "",
+        "id": "user-apis;search-users-with-emailid;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4675788059,
+              "status": "passed"
+            },
+            "line": 119,
+            "name": "Search user with \"test+1615363082542@yopmail.com\" emailId and valid \"token\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test+1615363082542@yopmail.com",
+                  "offset": 18
+                },
+                {
+                  "val": "token",
+                  "offset": 69
+                }
+              ],
+              "location": "users.search_user_with_something_emailid_and_valid_something(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 716120400,
+              "status": "passed"
+            },
+            "line": 120,
+            "name": "Request with POST request call with emailId",
+            "match": {
+              "location": "users.request_with_post_request_call_with_emailid()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 111583,
+              "status": "passed"
+            },
+            "line": 121,
+            "name": "Returns 200 statuscode when requested with emailId",
+            "match": {
+              "location": "users.returns_200_statuscode_when_requested_with_emailid()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@User"
+          }
+        ]
+      },
+      {
+        "line": 134,
+        "name": "Search users with firstName",
+        "description": "",
+        "id": "user-apis;search-users-with-firstname;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 532809892,
+              "status": "passed"
+            },
+            "line": 128,
+            "name": "Search user with \"Creator\" firstName and valid \"token\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Creator",
+                  "offset": 18
+                },
+                {
+                  "val": "token",
+                  "offset": 48
+                }
+              ],
+              "location": "users.search_user_with_something_firstname_and_valid_something(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 688496769,
+              "status": "passed"
+            },
+            "line": 129,
+            "name": "Request with POST request call with firstName",
+            "match": {
+              "location": "users.request_with_post_request_call_with_firstname()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 96615,
+              "status": "passed"
+            },
+            "line": 130,
+            "name": "Returns 200 statuscode when requested with firstName",
+            "match": {
+              "location": "users.returns_200_statuscode_when_requested_with_firstname()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 218053648,
+              "status": "passed"
+            },
+            "line": 131,
+            "name": "Showing total no of users count with the given firstName",
+            "match": {
+              "location": "users.showing_total_no_of_users_count_with_the_given_firstname()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@User"
+          }
+        ]
+      },
+      {
+        "line": 144,
+        "name": "Search users with createdBy",
+        "description": "",
+        "id": "user-apis;search-users-with-createdby;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 912179895,
+              "status": "passed"
+            },
+            "line": 138,
+            "name": "Search user with \"6dfb3d72-274f-45c0-b6fd-0807bded7041\" createdBy and valid \"token\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "6dfb3d72-274f-45c0-b6fd-0807bded7041",
+                  "offset": 18
+                },
+                {
+                  "val": "token",
+                  "offset": 77
+                }
+              ],
+              "location": "users.search_user_with_something_createdby_and_valid_something(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 454072291,
+              "status": "passed"
+            },
+            "line": 139,
+            "name": "Request with POST request call with createdBy",
+            "match": {
+              "location": "users.request_with_post_request_call_with_createdby()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 97138,
+              "status": "passed"
+            },
+            "line": 140,
+            "name": "Search result returns 200 statuscode when searched with with createdBy",
+            "match": {
+              "location": "users.search_result_returns_200_statuscode_when_searched_with_with_createdby()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 11480431,
+              "status": "passed"
+            },
+            "line": 141,
+            "name": "Returns the no of users created by the user",
+            "match": {
+              "location": "users.returns_the_no_of_users_created_by_the_user()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@User"
+          }
+        ]
+      },
+      {
+        "line": 154,
+        "name": "Verify the user exists api with valid emailId",
+        "description": "",
+        "id": "user-apis;verify-the-user-exists-api-with-valid-emailid;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 609637,
+              "status": "passed"
+            },
+            "line": 148,
+            "name": "Request user exists api with valid emailId",
+            "match": {
+              "location": "users.request_user_exists_api_with_valid_emailid()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 577295543,
+              "status": "passed"
+            },
+            "line": 149,
+            "name": "Request with GET api call with valid \"test+1615363082542@yopmail.com\"  emailId",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test+1615363082542@yopmail.com",
+                  "offset": 38
+                }
+              ],
+              "location": "users.request_with_get_api_call_with_valid_something_emailid(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 84288,
+              "status": "passed"
+            },
+            "line": 150,
+            "name": "User Exists apis returns 200 statuscode",
+            "match": {
+              "location": "users.user_exists_apis_returns_200_statuscode()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 9862956,
+              "status": "passed"
+            },
+            "line": 151,
+            "name": "Returns exists value as true",
+            "match": {
+              "location": "users.returns_exists_value_as_true()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@User"
+          }
+        ]
+      },
+      {
+        "line": 164,
+        "name": "Verify the user exists api with invalid emailId",
+        "description": "",
+        "id": "user-apis;verify-the-user-exists-api-with-invalid-emailid;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 842487,
+              "status": "passed"
+            },
+            "line": 158,
+            "name": "Request user exists api with invalid emailId",
+            "match": {
+              "location": "users.request_user_exists_api_with_invalid_emailid()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 512550173,
+              "status": "passed"
+            },
+            "line": 159,
+            "name": "Request with GET api call with invalid \"testaccount30999999@yopmail.com\"  emailId",
+            "match": {
+              "arguments": [
+                {
+                  "val": "testaccount30999999@yopmail.com",
+                  "offset": 40
+                }
+              ],
+              "location": "users.request_with_get_api_call_with_invalid_something_emailid(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 98587,
+              "status": "passed"
+            },
+            "line": 160,
+            "name": "User Exists apis returns 200 statuscode when requested with invalid emailId",
+            "match": {
+              "location": "users.user_exists_apis_returns_200_statuscode_when_requested_with_invalid_emailid()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 9106946,
+              "status": "passed"
+            },
+            "line": 161,
+            "name": "Returns exists value as false",
+            "match": {
+              "location": "users.returns_exists_value_as_false()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@User"
+          }
+        ]
+      },
+      {
+        "line": 176,
+        "name": "Verify the conscent read api with valid userId",
+        "description": "",
+        "id": "user-apis;verify-the-conscent-read-api-with-valid-userid;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4387689472,
+              "status": "passed"
+            },
+            "line": 168,
+            "name": "Requestbody with valid userId with \"token\" and with valid \"a1e64b41-16cd-47f7-989d-a605e740d040\" , \"01269878797503692810\" , \"do_31240717640512307211963\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "token",
+                  "offset": 36
+                },
+                {
+                  "val": "a1e64b41-16cd-47f7-989d-a605e740d040",
+                  "offset": 59
+                },
+                {
+                  "val": "01269878797503692810",
+                  "offset": 100
+                },
+                {
+                  "val": "do_31240717640512307211963",
+                  "offset": 125
+                }
+              ],
+              "location": "users.requestbody_with_valid_userid_with_something_and_with_valid_something_something_something(String,String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 529709139,
+              "status": "passed"
+            },
+            "line": 169,
+            "name": "Request with POST call valid userid, consumerId and objectId",
+            "match": {
+              "location": "users.request_with_post_call_valid_userid_consumerid_and_objectid()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 101847,
+              "status": "passed"
+            },
+            "line": 170,
+            "name": "Should return status code as 200 with valid userId",
+            "match": {
+              "location": "users.should_return_status_code_as_200_with_valid_userid()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 24164498,
+              "status": "passed"
+            },
+            "line": 171,
+            "name": "consumerId is present when requested with valid userId",
+            "match": {
+              "location": "users.consumerid_is_present_when_requested_with_valid_userid()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected status code \u003c200\u003e but was \u003c404\u003e.\n\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\n\tat io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)\n\tat io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)\n\tat io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)\n\tat stepDefinitions.users.consumertype_is_present_when_requested_with_valid_userid(users.java:805)\n\tat ✽.consumerType is present when requested with valid userId(file:src/test/java/features/users.feature:172)\n",
+              "duration": 14766766,
+              "status": "failed"
+            },
+            "line": 172,
+            "name": "consumerType is present when requested with valid userId",
+            "match": {
+              "location": "users.consumertype_is_present_when_requested_with_valid_userid()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7084,
+              "status": "skipped"
+            },
+            "line": 173,
+            "name": "conscentId is present when requested with valid userId",
+            "match": {
+              "location": "users.conscentid_is_present_when_requested_with_valid_userid()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@User"
+          }
+        ]
+      },
+      {
+        "line": 186,
+        "name": "Verify the conscent read api with invalid userId",
+        "description": "",
+        "id": "user-apis;verify-the-conscent-read-api-with-invalid-userid;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1052194110,
+              "status": "passed"
+            },
+            "line": 180,
+            "name": "Requestbody with invalid userId with \"token\" and with valid \"75c89aaec-d78f-4a13-abfd-39d76fdd9f6\" , \"01269878797503692810\" , \"do_31240717640512307211963\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "token",
+                  "offset": 38
+                },
+                {
+                  "val": "75c89aaec-d78f-4a13-abfd-39d76fdd9f6",
+                  "offset": 61
+                },
+                {
+                  "val": "01269878797503692810",
+                  "offset": 102
+                },
+                {
+                  "val": "do_31240717640512307211963",
+                  "offset": 127
+                }
+              ],
+              "location": "users.requestbody_with_invalid_userid_with_something_and_with_valid_something_something_something(String,String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 509879007,
+              "status": "passed"
+            },
+            "line": 181,
+            "name": "Request with POST call invalid userId",
+            "match": {
+              "location": "users.request_with_post_call_invalid_userid()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 81960,
+              "status": "passed"
+            },
+            "line": 182,
+            "name": "Should return status code as 404 with invalid userId",
+            "match": {
+              "location": "users.should_return_status_code_as_404_with_invalid_userid()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 9939310,
+              "status": "passed"
+            },
+            "line": 183,
+            "name": "Returning correct errormessage when requested with invalid userId",
+            "match": {
+              "location": "users.returning_correct_errormessage_when_requested_with_invalid_userid()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@User"
+          }
+        ]
+      },
+      {
+        "line": 196,
+        "name": "Verify the conscent read api with invalid consumerId",
+        "description": "",
+        "id": "user-apis;verify-the-conscent-read-api-with-invalid-consumerid;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 474519936,
+              "status": "passed"
+            },
+            "line": 190,
+            "name": "Requestbody with invalid consumerId with \"token\" and with valid \"5c89aaec-d78f-4a13-abfd-39d76fdd9f6c\" , \"012698787975036928102\" , \"do_31240717640512307211963\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "token",
+                  "offset": 42
+                },
+                {
+                  "val": "5c89aaec-d78f-4a13-abfd-39d76fdd9f6c",
+                  "offset": 65
+                },
+                {
+                  "val": "012698787975036928102",
+                  "offset": 106
+                },
+                {
+                  "val": "do_31240717640512307211963",
+                  "offset": 132
+                }
+              ],
+              "location": "users.requestbody_with_invalid_consumerid_with_something_and_with_valid_something_something_something(String,String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 589394777,
+              "status": "passed"
+            },
+            "line": 191,
+            "name": "Request with POST call invalid consumerId",
+            "match": {
+              "location": "users.request_with_POST_call_invalid_consumerId()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 116497,
+              "status": "passed"
+            },
+            "line": 192,
+            "name": "Should return status code as 404 with invalid consumerId",
+            "match": {
+              "location": "users.should_return_status_code_as_404_with_invalid_consumerid()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 14061899,
+              "status": "passed"
+            },
+            "line": 193,
+            "name": "Returning correct errormessage when requested with invalid consumerId",
+            "match": {
+              "location": "users.returning_correct_errormessage_when_requested_with_invalid_consumerid()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@User"
+          }
+        ]
+      },
+      {
+        "line": 206,
+        "name": "Verify the conscent read api with invalid objectId",
+        "description": "",
+        "id": "user-apis;verify-the-conscent-read-api-with-invalid-objectid;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2703968,
+              "status": "passed"
+            },
+            "line": 200,
+            "name": "Requestbody with invalid objectId with \"token\" and with valid \"5c89aaec-d78f-4a13-abfd-39d76fdd9f6c\" , \"01269878797503692810\" , \"do_31240717640512307211963000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "token",
+                  "offset": 40
+                },
+                {
+                  "val": "5c89aaec-d78f-4a13-abfd-39d76fdd9f6c",
+                  "offset": 63
+                },
+                {
+                  "val": "01269878797503692810",
+                  "offset": 104
+                },
+                {
+                  "val": "do_31240717640512307211963000",
+                  "offset": 129
+                }
+              ],
+              "location": "users.requestbody_with_invalid_objectid_with_something_and_with_valid_something_something_something(String,String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 517115728,
+              "status": "passed"
+            },
+            "line": 201,
+            "name": "Request with POST call with invalid objectId",
+            "match": {
+              "location": "users.request_with_post_call_with_invalid_objectid()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 92015,
+              "status": "passed"
+            },
+            "line": 202,
+            "name": "Should return status code as 404 with invalid objectId",
+            "match": {
+              "location": "users.should_return_status_code_as_404_with_invalid_objectid()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10595868,
+              "status": "passed"
+            },
+            "line": 203,
+            "name": "Returning correct errormessage when requested with invalid objectId",
+            "match": {
+              "location": "users.returning_correct_errormessage_when_requested_with_invalid_objectid()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@User"
+          }
+        ]
+      }
+    ],
+    "name": "User APIs",
+    "description": "",
+    "id": "user-apis",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/users.feature",
+    "tags": []
+  }
+]
