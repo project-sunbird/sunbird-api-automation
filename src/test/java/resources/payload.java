@@ -164,5 +164,71 @@ public class payload {
 				"    }\n" + 
 				"}";
 	}
+	
+	public static String generateDialCode()
+	{
+		return "{\n" + 
+				"  \"request\": {\n" + 
+				"    \"dialcodes\": {\n" + 
+				"      \"count\": 2,\n" + 
+				"      \"publisher\": \"Sunbird21\",\n" + 
+				"       \"qrCodeSpec\" : {\n" + 
+				"                \"width\": 30,\n" + 
+				"                \"height\": 30,\n" + 
+				"                \"border\": 12,\n" + 
+				"                \"text\": \"true\",\n" + 
+				"                \"errCorrectionLevel\": \"H\",\n" + 
+				"                \"color\": \"100,0,0,100\"\n" + 
+				"            }\n" + 
+				"    \n" + 
+				"    }\n" + 
+				"  }\n" + 
+				"}";
+	}
+	
+	public static String addRegistryRecord()
+	{
+		return "{\n" + 
+				"    \"request\": {\n" + 
+				"\"opensaberapiTeacher\": {\n" + 
+				"\"signatures\": [],\n" + 
+				"\"serialNum\": 8,\n" + 
+				"\"teacherCode\": \"1223h4d\",\n" + 
+				"\"nationalIdentifier\": \"1234567890123456\",\n" + 
+				"\"teacherName\": \"Marvin Pande\",\n" + 
+				"\"gender\": \"GenderTypeCode-MALE\",\n" + 
+				"\"birthDate\": \"1990-12-06T00:00:00.000Z\",\n" + 
+				"\"socialCategory\": \"SocialCategoryTypeCode-GENERAL\",\n" + 
+				"\"highestAcademicQualification\": \"AcademicQualificationTypeCode-PHD\",\n" + 
+				"\"highestTeacherQualification\": \"TeacherQualificationTypeCode-MED\",\n" + 
+				"\"yearOfJoiningService\": \"2014\",\n" + 
+				"\"teachingRole\": {},\n" + 
+				"\"inServiceTeacherTrainingFromBRC\": {},\n" + 
+				"\"inServiceTeacherTrainingFromCRC\": {},\n" + 
+				"\"inServiceTeacherTrainingFromDIET\": {},\n" + 
+				"\"inServiceTeacherTrainingFromOthers\": {},\n" + 
+				"\"nonTeachingAssignmentsForAcademicCalendar\": {},\n" + 
+				"\"basicProficiencyLevel\": [],\n" + 
+				"\"disabilityType\": \"DisabilityCode-NA\",\n" + 
+				"\"trainedForChildrenSpecialNeeds\": \"YesNoCode-YES\",\n" + 
+				"\"trainedinUseOfComputer\": \"YesNoCode-YES\"\n" + 
+				"}\n" + 
+				"}\n" + 
+				"}";
+	}
+	
+	public static String createLicense()
+	{
+		
+		String license = RandomStringUtils.randomAlphanumeric(5);
+		return "{\n" + 
+				"  \"request\": {\n" + 
+				"    \"license\": {\n" + 
+				"      \"name\": \""+license+"\",\n" + 
+				"      \"url\": \"www.url.com\"\n" + 
+				"    }\n" + 
+				"  }\n" + 
+				"}";
+	}
 
 }
