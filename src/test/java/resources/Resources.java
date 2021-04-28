@@ -50,4 +50,37 @@ public class Resources {
 		return userFeedAPI;
 		
 	}
+	
+	public static String getChannelAPI(String channelId)
+	{
+		String getChannelAPI="/api/channel/v1/read/"+channelId+"";
+		return getChannelAPI;
+		
+	}
+	public static String getFrameworkAPI(String frameworkId)
+	{
+		String getFrameworkAPI="/api/framework/v1/read/"+frameworkId+"";
+		return getFrameworkAPI;
+		
+	}
+	public static String generateDialCodeAPI()
+	{
+		String generateDialCodeAPI="/api/dialcode/v1/generate";
+		return generateDialCodeAPI;
+		
+	}
+	
+	public static String addRegistryRecordAPI()
+	{
+		String addRegistryRecordAPI="/api/add";
+		return addRegistryRecordAPI;
+		
+	}
+	
+	public static String createLicenseAPI()
+	{
+		String createLicenseAPI="/api/license/v3/create";
+		return createLicenseAPI;
+		
+	}
 }
