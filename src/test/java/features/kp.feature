@@ -32,7 +32,7 @@ Given Request registry record API with payload
 When Request registry API with POST request path
 Then Validate the registry API response
 
-@KP1
+@KP
 Scenario: Create License API functional tests
 Given Request create license api with requestBody
 When Request create license api with POST call
