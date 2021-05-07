@@ -75,10 +75,9 @@ public class Utils {
 				.formParam("password",(String)jsonObject.get("password"))
 				.formParam("grant_type",(String)jsonObject.get("grant_type"))
 				.formParam("client_secret",(String)jsonObject.get("client_secret"))
-				.log().all()
 				.when()
 				.post((String)jsonObject.get("accessTokenurl"))
-				.then().log().all().statusCode(200).extract().response();
+				.then().statusCode(200).extract().response();
 		String accessToken=response.path("access_token");
 		return accessToken;
 	}
