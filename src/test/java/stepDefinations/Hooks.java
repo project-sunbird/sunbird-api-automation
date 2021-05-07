@@ -3,12 +3,12 @@ package stepDefinations;
 import java.io.IOException;
 
 import io.cucumber.java.Before;
+import org.json.simple.parser.ParseException;
 
 public class Hooks {
 
 	@Before("@DeletePlace")
-	public void beforeScenario() throws IOException
-	{		//execute this code only when place id is null
+	public void beforeScenario() throws IOException, ParseException {		//execute this code only when place id is null
 		//write a code that will give you place id
 		
 		StepDefination m =new StepDefination();

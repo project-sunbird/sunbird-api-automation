@@ -21,6 +21,14 @@ Scenario: Verify if update Content functionality is working
 	Then the API call got success with status code 200
 	And "responseCode" in response body is "OK"
 	And verify do_id updated maps to "Yes" using "getContentAPI"
+
+Scenario: verify search api functionality is working
+	Given search content payload
+	When user calls "searchContentAPI" with "POST" http request
+	Then the API call got success with status code 200
+	And "responseCode" in response body is "OK"
+
+
 	 
 
 
