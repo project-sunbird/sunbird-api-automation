@@ -19,7 +19,7 @@ public class Utils {
 	static Properties prop;
 	public static RequestSpecification req;
 	JSONParser parser = new JSONParser();
-	Object obj = parser.parse(new FileReader("C:/Users/admin/Desktop/testData.json"));
+	Object obj = parser.parse(new FileReader("C:/Jenkinspath/testData.json"));
 	JSONObject jsonObject = (JSONObject) obj;
 	public  String baseuri=(String)jsonObject.get("baseUrl");
 	public  String auth_key=(String)jsonObject.get("authToken");
