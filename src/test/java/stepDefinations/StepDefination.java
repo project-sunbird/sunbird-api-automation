@@ -138,7 +138,7 @@ public void user_calls_with_http_request(String resource, String method) {
 		prop =new Properties();
 		FileInputStream fis =new FileInputStream("src\\test\\java\\resources\\global.properties");
 		prop.load(fis);
-		res=given().baseUri(util.baseuri).log().all()
+		res=given().baseUri(util.baseuri)
 				.header("Content-Type", "multipart/json")
 				.header("Authorization", util.auth_key)
 				.header("x-authenticated-user-token", getAccessToken())
