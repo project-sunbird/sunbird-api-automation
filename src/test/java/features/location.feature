@@ -7,4 +7,4 @@ Feature: validating location apis
     And "responseCode" in response body is "OK"
     Examples:
       | id |name|
-      |e4e60956-277c-439e-bbf7-5c99730341f3|APSTATE1|
+      |91d9baae-14f1-477a-955c-f91bd9037f0b|APSTATE1|
