@@ -1,0 +1,9 @@
+pojo\updateRequest.class
+bdd\APIFramework\App.class
+pojo\updateContentRequest.class
+pojo\Content.class
+pojo\Request.class
+payload\payloads.class
+pojo\updateContent.class
+pojo\createContent.class
+pojo\Trackable.class
