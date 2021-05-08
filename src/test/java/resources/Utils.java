@@ -19,7 +19,7 @@ public class Utils {
 	static Properties prop;
 	public static RequestSpecification req;
 	JSONParser parser = new JSONParser();
-	Object obj = parser.parse(new FileReader("C:/Users/admin/Desktop/testData.json"));
+	Object obj = parser.parse(new FileReader("C:/Jenkinspath/testData.json"));
 	JSONObject jsonObject = (JSONObject) obj;
 	public  String baseuri=(String)jsonObject.get("baseUrl");
 	public  String auth_key=(String)jsonObject.get("authToken");
@@ -75,10 +75,9 @@ public class Utils {
 				.formParam("password",(String)jsonObject.get("password"))
 				.formParam("grant_type",(String)jsonObject.get("grant_type"))
 				.formParam("client_secret",(String)jsonObject.get("client_secret"))
-				.log().all()
 				.when()
 				.post((String)jsonObject.get("accessTokenurl"))
-				.then().log().all().statusCode(200).extract().response();
+				.then().statusCode(200).extract().response();
 		String accessToken=response.path("access_token");
 		return accessToken;
 	}
