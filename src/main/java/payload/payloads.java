@@ -1,5 +1,7 @@
 package payload;
 
+import javax.print.DocFlavor;
+
 public class payloads {
     public static String contentSearch(){
         return "{\n" +
@@ -97,5 +99,29 @@ public class payloads {
                 "    }\n" +
                 "  }\n" +
                 "}";
+    }
+    public static String createUser(){
+        long phoneNumber = (long)(Math.random()*100000 + 3333300000L);
+        return "{\n" +
+                "  \"request\": {\n" +
+                "    \"firstName\": \"selfdeclaredev5\",\n" +
+                "    \"userName\": \"selfdeclaredev5\",\n" +
+                "    \"phone\": "+phoneNumber+",\n" +
+                "    \"lastName\": \"selfdeclaredev5\",\n" +
+                "    \"phoneVerified\": true,\n" +
+                "    \"password\": \"Pass@1\"\n" +
+                "  }\n" +
+                "}";
+
+    }
+    public static String updateUser(String userId){
+        long phoneNumber = (long)(Math.random()*100000 + 3333300000L);
+    return "{\n" +
+            "  \"request\": {\n" +
+            "    \"userId\": \""+userId+"\",\n" +
+            "    \"phone\": "+phoneNumber+",\n" +
+            "    \"phoneVerified\": true\n" +
+            "  }\n" +
+            "}";
     }
 }

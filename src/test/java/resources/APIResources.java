@@ -14,7 +14,10 @@ public enum APIResources {
 	createGroupAPI("/api/group/v1/create"),
 	readGroupList("/api/group/v1/list"),
 	createQuestionAPI("/api/question/v1/create"),
-	createQuestionSetAPI("/api/questionset/v1/create");
+	createQuestionSetAPI("/api/questionset/v1/create"),
+	createUserAPI("/api/user/v1/create"),
+	readUserAPI("/api/user/v1/read/{userId}"),
+	updateUserAPI("/api/user/v1/update");
 
 	private String resource;
 	

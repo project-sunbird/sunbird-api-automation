@@ -32,6 +32,7 @@ public class StepDefination extends Utils {
 	static String do_id;
 	static Properties prop;
 	Utils util=new Utils();
+	static String userId;
 
 	public StepDefination() throws IOException, ParseException {
 	}
@@ -180,6 +181,29 @@ public void user_calls_with_http_request(String resource, String method) {
 	public void createQuestionsetPayloadWith(String mimeType, String primaryCategory) throws IOException {
 		res=given().spec(requestSpecification())
 				.body(payloads.createQuestionSet(mimeType,primaryCategory));
+	}
+
+    @Given("create user Payload with phoneNumber")
+    public void createUserPayloadWith() throws IOException {
+		res=given()
+				.spec(requestSpecification())
+				.body(payloads.createUser());
+		
+    }
+
+	@And("verify userId created maps to using {string}")
+	public void verifyUserIdCreatedMapsToUsing(String resource) throws IOException {
+		userId=response.path("result.userId");
+		res=given().spec(requestSpecification()).pathParam("userId",userId);
+		user_calls_with_http_request(resource,"GET");
+		String actualUserId=response.path("result.response.organisations[0].userId");
+		assertEquals(actualUserId,userId);
+	}
+
+	@Given("update user Payload with phoneNumber")
+	public void updateUserPayloadWithPhoneNumber() throws IOException {
+			res =given().spec(requestSpecification())
+					.body(payloads.updateUser(userId));
 	}
 }
 
