@@ -13,10 +13,10 @@ Feature: validating group apis
 
   Scenario Outline: checking group list by userId
     Given Read groupDetails with "<userId>"
-    When user calls "readGroupList" with "GET" http request
+    When user calls "readGroupList" with "POST" http request
     Then the API call got success with status code 200
-    And "responseCode" in response body is "OK"
+    And responseCode in response body is 200
 
     Examples:
     | userId |
-    |9bb884fc-8a56-4727-9522-25a7d5b8ea06|
+    |0ced9624-e65b-4fd0-a0d3-2f6e86dd3ef7|

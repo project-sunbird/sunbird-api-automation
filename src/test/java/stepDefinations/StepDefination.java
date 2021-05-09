@@ -205,5 +205,10 @@ public void user_calls_with_http_request(String resource, String method) {
 			res =given().spec(requestSpecification())
 					.body(payloads.updateUser(userId));
 	}
+
+	@And("responseCode in response body is {int}")
+	public void responsecodeInResponseBodyIs(int expectedvalue) {
+		assertEquals(response.path("responseCode"),expectedvalue);
+	}
 }
 

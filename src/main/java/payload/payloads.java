@@ -57,9 +57,11 @@ public class payloads {
     }
     public static String listGroupByUser(String userId){
         return "{\n" +
-                "  \"reuqest\": {\n" +
-                "    \"userId\": \""+userId+"\"\n" +
-                "  }\n" +
+                "    \"request\": {\n" +
+                "        \"filters\": {\n" +
+                "            \"userId\": \""+userId+"\"\n" +
+                "        }\n" +
+                "    }\n" +
                 "}";
     }
 
@@ -87,7 +89,7 @@ public class payloads {
                 "      \"navigationMode\": \"linear\",\n" +
                 "      \"allowSkip\": \"Yes\",\n" +
                 "      \"requiresSubmit\": \"Yes\",\n" +
-                "      \"shuffle\": \"Yes\",\n" +
+                "      \"shuffle\": true,\n" +
                 "      \"showFeedback\": \"Yes\",\n" +
                 "      \"showSolutions\": \"Yes\",\n" +
                 "      \"summaryType\": \"Complete\",\n" +

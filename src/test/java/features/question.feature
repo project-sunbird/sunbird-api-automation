@@ -19,4 +19,4 @@ Feature: validating question apis
 
     Examples:
       | mimeType | primaryCategory |
-      | application/vnd.sunbird.question | Multiple Choice Question |
+      | application/vnd.sunbird.questionset | Practice Question Set |

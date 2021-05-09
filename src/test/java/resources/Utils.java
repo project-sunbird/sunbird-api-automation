@@ -7,6 +7,8 @@ import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 //import io.restassured.filter.log.RequestLoggingFilter;
 //import io.restassured.filter.log.ResponseLoggingFilter;
+import io.restassured.filter.log.RequestLoggingFilter;
+import io.restassured.filter.log.ResponseLoggingFilter;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
@@ -38,8 +40,8 @@ public class Utils {
 				 .addHeader("Content-Type", "application/json")
 				 .addHeader("Authorization", auth_key)
 				 .addHeader("x-authenticated-user-token", getAccessToken())
-				// .addFilter(RequestLoggingFilter.logRequestTo(log))
-				// .addFilter(ResponseLoggingFilter.logResponseTo(log))
+				 //.addFilter(RequestLoggingFilter.logRequestTo(log))
+				 //.addFilter(ResponseLoggingFilter.logResponseTo(log))
 		.setContentType(ContentType.JSON).build();
 		 return req;
 		}
