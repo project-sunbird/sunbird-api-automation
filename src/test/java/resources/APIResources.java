@@ -15,14 +15,16 @@ public enum APIResources {
 	readGroupList("/api/group/v1/list"),
 	createQuestionAPI("/api/question/v1/create"),
 	createQuestionSetAPI("/api/questionset/v1/create"),
-	createUserAPI("/api/user/v1/create"),
-	readUserAPI("/api/user/v1/read/{userId}"),
-	updateUserAPI("/api/user/v1/update"),
+	createUserAPI("/api/user/v2/create"),
+	readUserAPI("/api/user/v2/read/{userId}"),
+	updateUserAPI("/api/user/v2/update"),
 	createLicenseAPI("/api/license/v3/create"),
 	addRegistryRecordAPI("/api/add"),
 	generateDialCodeAPI("/api/dialcode/v1/generate"),
 	getFrameworkAPI("/api/framework/v1/read/{frameworkId}"),
-	getChannelAPI("/api/channel/v1/read/{channelId}");
+	getChannelAPI("/api/channel/v1/read/{channelId}"),
+	searchUserAPI("/api/user/v1/search"),
+    userExistAPI("/api/user/v1/exists/{idType}/{id}");
 
 
 	private String resource;

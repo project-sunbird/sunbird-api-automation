@@ -17,3 +17,21 @@ Feature: validating user apis are working
     When user calls "updateUserAPI" with "PATCH" http request
     Then the API call got success with status code 200
     And "responseCode" in response body is "OK"
+
+  Scenario Outline: Search user api verification
+     Given search user with "<emailId>"
+     When  user calls "searchUserAPI" with "POST" http request
+     Then the API call got success with status code 200
+     And "responseCode" in response body is "OK"
+    Examples:
+      | emailId |
+      |test+1615363082542@yopmail.com|
+
+  Scenario Outline: user exist api validation
+      Given user exxist api validation with "<idType>" and "<idValue>"
+      When  user calls "userExistAPI" with "GET" http request
+      Then the API call got success with status code 200
+      And "responseCode" in response body is "OK"
+    Examples:
+      | idType | idValue |
+      |email   |test+1615363082542@yopmail.com|

@@ -1648,4 +1648,174 @@ formatter.match({
 formatter.result({
   "status": "skipped"
 });
+formatter.scenarioOutline({
+  "name": "Search user api verification",
+  "description": "",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "name": "search user with \"\u003cemailId\u003e\"",
+  "keyword": "Given "
+});
+formatter.step({
+  "name": "user calls \"searchUserAPI\" with \"POST\" http request",
+  "keyword": "When "
+});
+formatter.step({
+  "name": "the API call got success with status code 200",
+  "keyword": "Then "
+});
+formatter.step({
+  "name": "\"responseCode\" in response body is \"OK\"",
+  "keyword": "And "
+});
+formatter.examples({
+  "name": "",
+  "description": "",
+  "keyword": "Examples",
+  "rows": [
+    {
+      "cells": [
+        "emailId"
+      ]
+    },
+    {
+      "cells": [
+        "test+1615363082542@yopmail.com"
+      ]
+    }
+  ]
+});
+formatter.scenario({
+  "name": "Search user api verification",
+  "description": "",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "name": "search user with \"test+1615363082542@yopmail.com\"",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "StepDefination.searchUserWith(String)"
+});
+formatter.result({
+  "error_message": "cucumber.runtime.CucumberException: Failed to instantiate class stepDefinations.StepDefination\r\n\tat cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:46)\r\n\tat cucumber.runtime.java.DefaultJavaObjectFactory.getInstance(DefaultJavaObjectFactory.java:32)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)\r\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\r\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:46)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:50)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:68)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:23)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:144)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:65)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:174)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat sun.reflect.GeneratedConstructorAccessor3.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:40)\r\n\t... 31 more\r\nCaused by: java.io.FileNotFoundException: C:\\Jenkinspath\\testData.json (The system cannot find the path specified)\r\n\tat java.io.FileInputStream.open0(Native Method)\r\n\tat java.io.FileInputStream.open(FileInputStream.java:195)\r\n\tat java.io.FileInputStream.\u003cinit\u003e(FileInputStream.java:138)\r\n\tat java.io.FileInputStream.\u003cinit\u003e(FileInputStream.java:93)\r\n\tat java.io.FileReader.\u003cinit\u003e(FileReader.java:58)\r\n\tat resources.Utils.\u003cinit\u003e(Utils.java:24)\r\n\tat stepDefinations.StepDefination.\u003cinit\u003e(StepDefination.java:38)\r\n\t... 35 more\r\n",
+  "status": "failed"
+});
+formatter.step({
+  "name": "user calls \"searchUserAPI\" with \"POST\" http request",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "StepDefination.user_calls_with_http_request(String,String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "the API call got success with status code 200",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefination.the_API_call_got_success_with_status_code(Integer)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "\"responseCode\" in response body is \"OK\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDefination.in_response_body_is(String,String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.scenarioOutline({
+  "name": "user exist api validation",
+  "description": "",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "name": "user exxist api validation with \"\u003cidType\u003e\" and \"\u003cidValue\u003e\"",
+  "keyword": "Given "
+});
+formatter.step({
+  "name": "user calls \"userExistAPI\" with \"GET\" http request",
+  "keyword": "When "
+});
+formatter.step({
+  "name": "the API call got success with status code 200",
+  "keyword": "Then "
+});
+formatter.step({
+  "name": "\"responseCode\" in response body is \"OK\"",
+  "keyword": "And "
+});
+formatter.examples({
+  "name": "",
+  "description": "",
+  "keyword": "Examples",
+  "rows": [
+    {
+      "cells": [
+        "idType",
+        "idValue"
+      ]
+    },
+    {
+      "cells": [
+        "email",
+        "test+1615363082542@yopmail.com"
+      ]
+    }
+  ]
+});
+formatter.scenario({
+  "name": "user exist api validation",
+  "description": "",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "name": "user exxist api validation with \"email\" and \"test+1615363082542@yopmail.com\"",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "StepDefination.userExxistApiValidationWithAnd(String,String)"
+});
+formatter.result({
+  "error_message": "cucumber.runtime.CucumberException: Failed to instantiate class stepDefinations.StepDefination\r\n\tat cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:46)\r\n\tat cucumber.runtime.java.DefaultJavaObjectFactory.getInstance(DefaultJavaObjectFactory.java:32)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)\r\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\r\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:46)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:50)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:68)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:23)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:144)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:65)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:174)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat sun.reflect.GeneratedConstructorAccessor3.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:40)\r\n\t... 31 more\r\nCaused by: java.io.FileNotFoundException: C:\\Jenkinspath\\testData.json (The system cannot find the path specified)\r\n\tat java.io.FileInputStream.open0(Native Method)\r\n\tat java.io.FileInputStream.open(FileInputStream.java:195)\r\n\tat java.io.FileInputStream.\u003cinit\u003e(FileInputStream.java:138)\r\n\tat java.io.FileInputStream.\u003cinit\u003e(FileInputStream.java:93)\r\n\tat java.io.FileReader.\u003cinit\u003e(FileReader.java:58)\r\n\tat resources.Utils.\u003cinit\u003e(Utils.java:24)\r\n\tat stepDefinations.StepDefination.\u003cinit\u003e(StepDefination.java:38)\r\n\t... 35 more\r\n",
+  "status": "failed"
+});
+formatter.step({
+  "name": "user calls \"userExistAPI\" with \"GET\" http request",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "StepDefination.user_calls_with_http_request(String,String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "the API call got success with status code 200",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefination.the_API_call_got_success_with_status_code(Integer)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "\"responseCode\" in response body is \"OK\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDefination.in_response_body_is(String,String)"
+});
+formatter.result({
+  "status": "skipped"
+});
 });

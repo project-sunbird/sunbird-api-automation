@@ -105,15 +105,14 @@ public class payloads {
                 "}";
     }
     public static String createUser(){
-        long phoneNumber = (long)(Math.random()*100000 + 3333300000L);
+        String emailId ="email+"+System.currentTimeMillis()+"@yopmail.com";;
         return "{\n" +
                 "  \"request\": {\n" +
-                "    \"firstName\": \"selfdeclaredev5\",\n" +
-                "    \"userName\": \"selfdeclaredev5\",\n" +
-                "    \"phone\": "+phoneNumber+",\n" +
-                "    \"lastName\": \"selfdeclaredev5\",\n" +
-                "    \"phoneVerified\": true,\n" +
-                "    \"password\": \"Pass@1\"\n" +
+                "    \"firstName\": \"selfdeclaredev2\",\n" +
+                "    \"email\": \""+emailId+"\",\n" +
+                "    \"lastName\": \"selfdeclaredev2\",\n" +
+                "    \"emailVerified\": true,\n" +
+                "    \"password\": \"Password@1\"\n" +
                 "  }\n" +
                 "}";
 
@@ -189,6 +188,16 @@ public class payloads {
                 "    \"license\": {\n" +
                 "      \"name\": \""+license+"\",\n" +
                 "      \"url\": \"www.url.com\"\n" +
+                "    }\n" +
+                "  }\n" +
+                "}";
+    }
+
+    public static String searchUser(String emailId){
+        return "{\n" +
+                "  \"request\": {\n" +
+                "    \"filters\": {\n" +
+                "      \"email\": \""+emailId+"\"\n" +
                 "    }\n" +
                 "  }\n" +
                 "}";

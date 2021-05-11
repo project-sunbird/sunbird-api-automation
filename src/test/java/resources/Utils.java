@@ -40,8 +40,8 @@ public class Utils {
 				 .addHeader("Content-Type", "application/json")
 				 .addHeader("Authorization", auth_key)
 				 .addHeader("x-authenticated-user-token", getAccessToken())
-				 //.addFilter(RequestLoggingFilter.logRequestTo(log))
-				 //.addFilter(ResponseLoggingFilter.logResponseTo(log))
+				// .addFilter(RequestLoggingFilter.logRequestTo(log))
+				// .addFilter(ResponseLoggingFilter.logResponseTo(log))
 		.setContentType(ContentType.JSON).build();
 		 return req;
 		}
@@ -94,7 +94,7 @@ public class Utils {
 					.addHeader("Authorization", prop.getProperty("authToken"))
 					.addHeader("x-authenticated-user-token", getAccessToken())
 					//.addFilter(RequestLoggingFilter.logRequestTo(log))
-				//	.addFilter(ResponseLoggingFilter.logResponseTo(log))
+					//.addFilter(ResponseLoggingFilter.logResponseTo(log))
 					.setContentType(ContentType.JSON).build();
 			return req;
 		}

@@ -257,5 +257,18 @@ public void user_calls_with_http_request(String resource, String method) {
 		userId=response.path("result.userId");
 		Assert.assertNotNull(userId);
 	}
+
+	@Given("search user with {string}")
+	public void searchUserWith(String emailId) throws IOException {
+		res =given().spec(requestSpecification())
+				.body(payloads.searchUser(emailId));
+
+	}
+
+	@Given("user exxist api validation with {string} and {string}")
+	public void userExxistApiValidationWithAnd(String idType, String idValue) throws IOException {
+		res =given().spec(requestSpecification()).pathParam("idType",idType).pathParam("id",idValue);
+
+	}
 }
 
