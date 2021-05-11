@@ -17,7 +17,13 @@ public enum APIResources {
 	createQuestionSetAPI("/api/questionset/v1/create"),
 	createUserAPI("/api/user/v1/create"),
 	readUserAPI("/api/user/v1/read/{userId}"),
-	updateUserAPI("/api/user/v1/update");
+	updateUserAPI("/api/user/v1/update"),
+	createLicenseAPI("/api/license/v3/create"),
+	addRegistryRecordAPI("/api/add"),
+	generateDialCodeAPI("/api/dialcode/v1/generate"),
+	getFrameworkAPI("/api/framework/v1/read/{frameworkId}"),
+	getChannelAPI("/api/channel/v1/read/{channelId}");
+
 
 	private String resource;
 	

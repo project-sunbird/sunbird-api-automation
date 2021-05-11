@@ -19,6 +19,7 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 import org.json.simple.parser.ParseException;
+import org.junit.Assert;
 import payload.payloads;
 import resources.APIResources;
 import resources.TestDataBuild;
@@ -183,13 +184,6 @@ public void user_calls_with_http_request(String resource, String method) {
 				.body(payloads.createQuestionSet(mimeType,primaryCategory));
 	}
 
-    @Given("create user Payload with phoneNumber")
-    public void createUserPayloadWith() throws IOException {
-		res=given()
-				.spec(requestSpecification())
-				.body(payloads.createUser());
-		
-    }
 
 	@And("verify userId created maps to using {string}")
 	public void verifyUserIdCreatedMapsToUsing(String resource) throws IOException {
@@ -209,6 +203,59 @@ public void user_calls_with_http_request(String resource, String method) {
 	@And("responseCode in response body is {int}")
 	public void responsecodeInResponseBodyIs(int expectedvalue) {
 		assertEquals(response.path("responseCode"),expectedvalue);
+	}
+
+	@Given("Read channel api with path param {string}")
+	public void readChannelApiWithPathParam(String channelId) throws IOException {
+		res=given().spec(requestSpecification()).pathParam("channelId",channelId);
+	}
+
+	@Given("Read framework api with path param {string}")
+	public void readFrameworkApiWithPathParam(String frameworkId) throws IOException {
+		res=given().spec(requestSpecification()).pathParam("frameworkId",frameworkId);
+	}
+
+	@Given("Generate dialcode using payload")
+	public void generateDialcodeUsingPayload() throws IOException {
+		res =given().spec(requestSpecification())
+				.body(payloads.generateDialCode());
+	}
+
+	@Given("Request registry record API with payload")
+	public void requestRegistryRecordAPIWithPayload() throws IOException {
+		res =given().spec(requestSpecification())
+				.body(payloads.addRegistryRecord());
+	}
+
+	@Given("Request create license api with payload")
+	public void requestCreateLicenseApiWithPayload() throws IOException {
+		res =given().spec(requestSpecification())
+				.body(payloads.createLicense());
+	}
+
+	@Given("create user with valid phoneNumber")
+	public void createUserWithValidPhoneNumber() throws IOException {
+		res =given().spec(requestSpecification())
+				.body(payloads.createUser());
+	}
+
+	@Given("Read user with valid userId")
+	public void readUserWithValid() throws IOException {
+
+		res =given().spec(requestSpecification()).pathParam("userId",userId);
+
+	}
+
+	@Given("update user details with payload")
+	public void updateUserDetailsWithPayload() throws IOException {
+		res =given().spec(requestSpecification())
+				.body(payloads.updateUser(userId));
+	}
+
+	@And("validate userId is not null")
+	public void validateUserIdIsNotNull() {
+		userId=response.path("result.userId");
+		Assert.assertNotNull(userId);
 	}
 }
 

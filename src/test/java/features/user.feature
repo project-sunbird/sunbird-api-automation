@@ -1,19 +1,19 @@
-Feature: Validating user API's
-
-
-  Scenario : Verify if user is successfully created using createApi
-    Given create user Payload with phoneNumber
+Feature: validating user apis are working
+  Scenario: checking user creation api creating user with unique phonenumber
+    Given create user with valid phoneNumber
     When user calls "createUserAPI" with "POST" http request
     Then the API call got success with status code 200
     And "responseCode" in response body is "OK"
-    And verify userId created maps to using "getUserAPI"
+    And validate userId is not null
 
-
-
-  Scenario : Verify if update user functionality is working
-    Given update user Payload with phoneNumber
-    When user calls "updateUserAPI" with "PATCH" http request
+  Scenario: Getting user details with getUser api
+    Given Read user with valid userId
+    When user calls "readUserAPI" with "GET" http request
     Then the API call got success with status code 200
     And "responseCode" in response body is "OK"
 
-
+  Scenario: Upadte user details with update user api
+    Given update user details with payload
+    When user calls "updateUserAPI" with "PATCH" http request
+    Then the API call got success with status code 200
+    And "responseCode" in response body is "OK"
