@@ -8,7 +8,7 @@ Feature: validating course apis
 
    Examples:
      | courseId | batchId | userId |
-     | do_2130680468299530241752 |01327385116807168016|9bb884fc-8a56-4727-9522-25a7d5b8ea06|
+     | do_21329831820991692811252 |01329832358048563257|9bb884fc-8a56-4727-9522-25a7d5b8ea06|
 
 
   Scenario Outline: checking course umenroll api working properly
@@ -19,4 +19,4 @@ Feature: validating course apis
 
     Examples:
       | courseId | batchId | userId |
-      | do_2130680468299530241752 |01327385116807168016|9bb884fc-8a56-4727-9522-25a7d5b8ea06|
+      | do_21329831820991692811252 |01329832358048563257|9bb884fc-8a56-4727-9522-25a7d5b8ea06|
