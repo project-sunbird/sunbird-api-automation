@@ -95,7 +95,7 @@ public class Utils {
 					.addHeader("x-authenticated-user-token", getAccessToken())
 					//.addFilter(RequestLoggingFilter.logRequestTo(log))
 					//.addFilter(ResponseLoggingFilter.logResponseTo(log))
-					.setContentType(ContentType.JSON).build();
+					.build();
 			return req;
 		}
 		return req;
