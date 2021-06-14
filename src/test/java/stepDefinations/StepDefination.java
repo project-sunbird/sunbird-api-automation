@@ -162,8 +162,12 @@ public void user_calls_with_http_request(String resource, String method) {
 
 	@Given("create group payload with {string}  {string}")
 	public void createGroupPayloadWith(String groupName, String description) throws IOException {
-		res=given().spec(requestSpecification())
-				.body(payloads.createGroup(groupName,description));
+		//res=given().spec(requestSpecification())
+				//.body(payloads.createGroup(groupName,description));
+		
+		res=given().header("Content-Type","application/json").header("Authorization",util.auth_key)
+			.header("x-authenticated-user-token",util.getAccessToken())
+    			.body(payloads.createGroup(groupName, description));
 	}
 
 	@Given("Read groupDetails with {string}")
