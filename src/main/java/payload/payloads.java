@@ -128,24 +128,24 @@ public class payloads {
             "}";
     }
     public static String generateDialCode()
-    {
-        return "{\n" +
-                "  \"request\": {\n" +
-                "    \"dialcodes\": {\n" +
-                "      \"count\": 2,\n" +
-                "      \"publisher\": \"Sunbird21\",\n" +
-                "       \"qrCodeSpec\" : {\n" +
-                "                \"width\": 30,\n" +
-                "                \"height\": 30,\n" +
-                "                \"border\": 12,\n" +
-                "                \"text\": \"true\",\n" +
-                "                \"errCorrectionLevel\": \"H\",\n" +
-                "                \"color\": \"100,0,0,100\"\n" +
-                "            }\n" +
-                "    \n" +
-                "    }\n" +
-                "  }\n" +
-                "}";
+  {
+        return "{\n" + 
+        		"  \"request\": {\n" + 
+        		"    \"dialcodes\": {\n" + 
+        		"      \"count\": 5,\n" + 
+        		"      \"publisher\": \"Sunbird21\",\n" + 
+        		"       \"qrCodeSpec\" : {\n" + 
+        		"                \"width\": 30,\n" + 
+        		"                \"height\": 30,\n" + 
+        		"                \"border\": 12,\n" + 
+        		"                \"text\": \"true\",\n" + 
+        		"                \"errCorrectionLevel\": \"H\",\n" + 
+        		"                \"color\": \"100,0,0,100\"\n" + 
+        		"            }\n" + 
+        		"    \n" + 
+        		"    }\n" + 
+        		"  }\n" + 
+        		"}";
     }
 
     public static String addRegistryRecord()
