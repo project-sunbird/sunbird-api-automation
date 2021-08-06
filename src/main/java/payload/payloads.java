@@ -120,13 +120,13 @@ public class payloads {
     public static String updateUser(String userId){
         long phoneNumber = (long)(Math.random()*100000 + 3333300000L);
        
-    return "{\n" +
-            "  \"request\": {\n" +
-            "    \"userId\": "+userId+",\n" +
-            "    \"phone\": "+phoneNumber+",\n" +
-            "    \"phoneVerified\": true\n" +
-            "  }\n" +
-            "}";
+   	 return "{\n" +
+         "  \"request\": {\n" +
+         "    \"userId\": \""+userId+"\",\n" +
+         "    \"phone\": \""+phoneNumber+"\",\n" +
+         "    \"phoneVerified\": true\n" +
+         "  }\n" +
+         "}";
     }
     public static String generateDialCode()
   {
