@@ -144,7 +144,7 @@ public void user_calls_with_http_request(String resource, String method) {
 				.header("Content-Type", "multipart/json")
 				.header("Authorization", util.auth_key)
 				.header("x-authenticated-user-token", getAccessToken())
-				.multiPart("fileUrl",new File("src/main/resources/testDataFiles/uploadsamplecsvfile.csv"))
+				.multiPart("fileUrl",new File("https://sunbirdstagingpublic.blob.core.windows.net/sunbird-content-staging/content/textbook/toc/do_213298858288390144134_upload-book_1623396198775.csv"))
 				.pathParam("textbook-id",bookId);
 	}
 
