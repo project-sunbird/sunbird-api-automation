@@ -221,7 +221,7 @@ public void user_calls_with_http_request(String resource, String method) {
 
 	@Given("Generate dialcode using payload")
 	public void generateDialcodeUsingPayload() throws IOException {
-		res =given().spec(requestSpecification())
+		res =given().spec(requestSpecification()).header("X-Channel-ID","0126796199493140480").header("Content-Type","application/json")
 				.body(payloads.generateDialCode());
 	}
 
