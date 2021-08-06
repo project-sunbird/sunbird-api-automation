@@ -138,7 +138,7 @@ public void user_calls_with_http_request(String resource, String method) {
 	@Given("read toc filepath to Upload with {string} as pathparam")
 	public void readTocFilepathToUploadWithAsPathparam(String bookId) throws IOException {
 		prop =new Properties();
-		FileInputStream fis =new FileInputStream("src\\test\\java\\resources\\global.properties");
+		FileInputStream fis =new FileInputStream("src/test/java/resources/global.properties");
 		prop.load(fis);
 		res=given().baseUri(util.baseuri)
 				.header("Content-Type", "multipart/json")
