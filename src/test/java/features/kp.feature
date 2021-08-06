@@ -29,11 +29,4 @@ Feature: Validating KP apis
       Then the API call got success with status code 200
       And "responseCode" in response body is "OK"
 
-   @ignore
-   Scenario: Add registry record API Functional Tests
-      Given Request registry record API with payload
-      When user calls "addRegistryRecordAPI" with "POST" http request
-      Then the API call got success with status code 200
-      And "responseCode" in response body is "OK"
-
    
