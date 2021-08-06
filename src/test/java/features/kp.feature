@@ -22,16 +22,18 @@ Feature: Validating KP apis
       When user calls "generateDialCodeAPI" with "POST" http request
       Then the API call got success with status code 200
       And "responseCode" in response body is "OK"
+      
+   Scenario: Create License API functional tests
+      Given Request create license api with payload
+      When user calls "createLicenseAPI" with "POST" http request
+      Then the API call got success with status code 200
+      And "responseCode" in response body is "OK"
 
-   
-    Scenario: Add registry record API Functional Tests
+   @ignore("Service not available")
+   Scenario: Add registry record API Functional Tests
       Given Request registry record API with payload
       When user calls "addRegistryRecordAPI" with "POST" http request
       Then the API call got success with status code 200
       And "responseCode" in response body is "OK"
 
-    Scenario: Create License API functional tests
-      Given Request create license api with payload
-      When user calls "createLicenseAPI" with "POST" http request
-      Then the API call got success with status code 200
-      And "responseCode" in response body is "OK"
+   
