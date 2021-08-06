@@ -122,7 +122,7 @@ public class payloads {
        
     return "{\n" +
             "  \"request\": {\n" +
-            "    \"userId\": \""+userId+"\",\n" +
+            "    \"userId\": "+userId+",\n" +
             "    \"phone\": "+phoneNumber+",\n" +
             "    \"phoneVerified\": true\n" +
             "  }\n" +
