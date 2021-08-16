@@ -4,7 +4,7 @@ Feature: validating group apis
     Given create group payload with "<groupName>"  "<description>"
     When user calls "createGroupAPI" with "POST" http request
     Then the API call got success with status code 200
-    And "responseCode" in response body is "OK"
+    And responseCode in response body is 200
 
     Examples:
       | groupName | description |
