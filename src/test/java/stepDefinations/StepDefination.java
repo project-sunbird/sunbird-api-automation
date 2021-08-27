@@ -135,7 +135,7 @@ public void user_calls_with_http_request(String resource, String method) {
 		assertEquals(actualStatus,expectedStatus);
 	}
 
-	@Given("read toc filepath to Upload with {string} as pathparam")
+	/*@Given("read toc filepath to Upload with {string} as pathparam")
 	public void readTocFilepathToUploadWithAsPathparam(String bookId) throws IOException {
 		prop =new Properties();
 		FileInputStream fis =new FileInputStream("src/test/java/resources/global.properties");
@@ -146,7 +146,7 @@ public void user_calls_with_http_request(String resource, String method) {
 				.header("x-authenticated-user-token", getAccessToken())
 				.multiPart("file",new File("src/main/resources/testDataFiles/uploadsamplecsvfile.csv"))
 				.pathParam("textbook-id",bookId);
-	}
+	}*/
 
 	@Given("read org details  payload with {string}")
 	public void readOrgDetailsPayloadWith(String orgId) throws IOException {
