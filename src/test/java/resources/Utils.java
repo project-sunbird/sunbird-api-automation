@@ -25,6 +25,12 @@ public class Utils {
 	JSONObject jsonObject = (JSONObject) obj;
 	public  String baseuri=(String)jsonObject.get("baseUrl");
 	public  String auth_key=(String)jsonObject.get("authToken");
+	public  String clientId=(String)jsonObject.get("clientId");
+	public  String username=(String)jsonObject.get("username");
+	public  String password=(String)jsonObject.get("password");
+	public  String grant_type=(String)jsonObject.get("grant_type");
+	public  String client_secret=(String)jsonObject.get("client_secret");
+	public  String accessTokenurl=(String)jsonObject.get("accessTokenurl");
 
 	public Utils() throws IOException, ParseException {
 	}
