@@ -53,7 +53,7 @@ public class StepDefination extends Utils {
 
 
 
-		res=given().spec(requestSpecification())
+		res=given().spec(requestSpecification()).header("X-authenticated-user-token", util.getAccessToken())
 				.body(payloads.courseEnroll(courseId,batchId,userId));
 	}
 	@Given("create courseUnEnroll payload with {string}  {string} {string}")
