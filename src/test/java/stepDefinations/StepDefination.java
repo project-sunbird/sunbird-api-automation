@@ -253,7 +253,7 @@ public void user_calls_with_http_request(String resource, String method) {
 	@Given("update user details with payload")
 	public void updateUserDetailsWithPayload() throws IOException {
 		res =given().spec(requestSpecification()).header("Content-Type","application/json").header("X-authenticated-user-token", util.getAccessToken())
-				.body(payloads.updateUser(userId));
+				.body(payloads.updateUser());
 	}
 
 	@And("validate userId is not null")
