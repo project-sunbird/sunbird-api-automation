@@ -76,6 +76,7 @@ public class Utils {
 		return js.get(key).toString();
 	}
 	public  String getAccessToken() {
+		RestAssured.baseURI=(String)jsonObject.get("baseUrl");
 		Response response= RestAssured.given()
 				.header("Content-Type", "application/x-www-form-urlencoded")
 				.formParam("client_id", (String)jsonObject.get("clientId"))
