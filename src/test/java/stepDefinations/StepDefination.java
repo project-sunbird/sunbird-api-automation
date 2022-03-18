@@ -199,7 +199,7 @@ public void user_calls_with_http_request(String resource, String method) {
 	}
 
 	@Given("update user Payload with phoneNumber")
-	public void updateUserPayloadWithPhoneNumber() throws IOException {
+	public void updateUserPayloadWithPhoneNumber(String userId) throws IOException {
 			res =given().spec(requestSpecification())
 					.body(payloads.updateUser(userId));
 	}
