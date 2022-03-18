@@ -117,7 +117,7 @@ public class payloads {
                 "}";
 
     }
-    public static String updateUser(){
+    public static String updateUser(String userId){
         long phoneNumber = (long)(Math.random()*100000 + 3333300000L);
        
    	 return "{\n" +
