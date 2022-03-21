@@ -90,6 +90,24 @@ public class Utils {
 		String accessToken=response.path("access_token");
 		return accessToken;
 	}
+	
+	//Generate accessToken only for Group API
+	public  String getAccessTokenGroup() {
+		RestAssured.baseURI=(String)jsonObject.get("baseUrl");
+		Response response= RestAssured.given()
+				.header("Content-Type", "application/x-www-form-urlencoded")
+				.formParam("client_id", (String)jsonObject.get("clientId"))
+				.formParam("username",(String)jsonObject.get("username2"))
+				.formParam("password",(String)jsonObject.get("password"))
+				.formParam("grant_type",(String)jsonObject.get("grant_type"))
+				.formParam("client_secret",(String)jsonObject.get("client_secret"))
+				.when()
+				.post((String)jsonObject.get("accessTokenurl"))
+				.then().statusCode(200).extract().response();
+		String accessTokenGroup=response.path("access_token");
+		return accessTokenGroup;
+	}
+	
 	public RequestSpecification requestSpecificationFileUpload() throws IOException
 	{
 
