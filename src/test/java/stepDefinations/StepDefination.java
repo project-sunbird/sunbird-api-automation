@@ -165,7 +165,7 @@ public void user_calls_with_http_request(String resource, String method) {
 		//res=given().spec(requestSpecification())
 				//.body(payloads.createGroup(groupName,description));
 		
-		res=given().header("Content-Type","application/json").header("Authorization",util.create_group_accessToken)
+		res=given().header("Content-Type","application/json").header("Authorization",util.auth_key)
 			.header("x-authenticated-user-token",util.getAccessTokenGroup())
     			.body(payloads.createGroup(groupName, description));
 	}
